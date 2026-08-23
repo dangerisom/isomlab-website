@@ -1,0 +1,171 @@
+/* ---------------------------------------------------------------------------
+   Isom Lab — design tokens
+
+   Light is the primary design; dark redefines only the tokens. Every color has
+   its definition on bare :root so nothing depends on a media query resolving.
+   Accent is drawn from the University of Miami orange, deepened so it holds up
+   as a text color and used sparingly: rules, section numerals, link underlines.
+   --------------------------------------------------------------------------- */
+:root {
+  --paper:        #fbfaf8;
+  --paper-raised: #ffffff;
+  --paper-sunk:   #f2efea;
+  --ink:          #14110e;
+  --ink-muted:    #5c554d;
+  --ink-faint:    #8b8279;
+  --rule:         #e2ddd5;
+  --rule-strong:  #cdc6bb;
+  --accent:       #b34a12;
+  --accent-soft:  #f6e7dc;
+  --accent-ink:   #8c3a0e;
+  --green:        #005030;
+
+  --font-display: 'Source Serif 4', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --font-body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+
+  --measure: 68ch;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --page: 1180px;
+
+  --step--1: clamp(0.82rem, 0.79rem + 0.14vw, 0.9rem);
+  --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.09rem);
+  --step-1:  clamp(1.2rem, 1.12rem + 0.4vw, 1.4rem);
+  --step-2:  clamp(1.5rem, 1.34rem + 0.8vw, 2rem);
+  --step-3:  clamp(1.9rem, 1.6rem + 1.5vw, 2.9rem);
+  --step-4:  clamp(2.4rem, 1.8rem + 3vw, 4.4rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper:        #12100e;
+    --paper-raised: #1b1815;
+    --paper-sunk:   #0c0a09;
+    --ink:          #f2ede6;
+    --ink-muted:    #a9a099;
+    --ink-faint:    #7d746c;
+    --rule:         #2e2925;
+    --rule-strong:  #453e38;
+    --accent:       #e8834a;
+    --accent-soft:  #2b1a10;
+    --accent-ink:   #f3a173;
+    --green:        #4d9b7a;
+  }
+}
+
+:root[data-theme='dark'] {
+  --paper:        #12100e;
+  --paper-raised: #1b1815;
+  --paper-sunk:   #0c0a09;
+  --ink:          #f2ede6;
+  --ink-muted:    #a9a099;
+  --ink-faint:    #7d746c;
+  --rule:         #2e2925;
+  --rule-strong:  #453e38;
+  --accent:       #e8834a;
+  --accent-soft:  #2b1a10;
+  --accent-ink:   #f3a173;
+  --green:        #4d9b7a;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.65;
+  font-feature-settings: 'kern', 'liga';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.5em;
+  text-wrap: balance;
+}
+h1 { font-size: var(--step-4); }
+h2 { font-size: var(--step-3); }
+h3 { font-size: var(--step-2); }
+
+p { margin: 0 0 1.1em; text-wrap: pretty; }
+p:last-child { margin-bottom: 0; }
+
+a { color: inherit; text-decoration-color: var(--rule-strong); text-underline-offset: 0.18em; }
+a:hover { text-decoration-color: var(--accent); color: var(--accent-ink); }
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+::selection { background: var(--accent-soft); color: var(--accent-ink); }
+
+/* Layout primitives -------------------------------------------------------- */
+.wrap {
+  width: min(100% - var(--gutter) * 2, var(--page));
+  margin-inline: auto;
+}
+.prose { max-width: var(--measure); }
+
+/* Same page gutters as .wrap, but the text inside is held to a readable measure.
+   Using .wrap and .prose on one element would center the block on its own
+   narrow width and break alignment with the sections above and below it. */
+.wrap-prose > * { max-width: var(--measure); }
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 1rem;
+}
+
+.lede {
+  font-size: var(--step-1);
+  line-height: 1.5;
+  color: var(--ink-muted);
+  max-width: 60ch;
+}
+
+.section { padding-block: clamp(3.5rem, 9vw, 7rem); }
+.section + .section { border-top: 1px solid var(--rule); }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.7rem 1.1rem;
+  z-index: 100;
+}
+.skip-link:focus { left: 0.5rem; top: 0.5rem; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}

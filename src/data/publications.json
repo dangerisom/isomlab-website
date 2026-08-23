@@ -1,0 +1,1991 @@
+{
+  "orcid": "0000-0001-5637-2370",
+  "synced": "2026-08-10 03:01 UTC",
+  "counts": {
+    "total": 36,
+    "withheld": 1
+  },
+  "items": [
+    {
+      "title": "TM184C is a GPCR-like regulator of intercellular exchange and autophagy",
+      "authors": [
+        {
+          "name": "Lee K",
+          "isLab": false
+        },
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Arcuri J",
+          "isLab": false
+        },
+        {
+          "name": "Chandthakuri S",
+          "isLab": false
+        },
+        {
+          "name": "Pujols J",
+          "isLab": false
+        },
+        {
+          "name": "Colon B",
+          "isLab": false
+        },
+        {
+          "name": "Wang Q",
+          "isLab": false
+        },
+        {
+          "name": "Wu C",
+          "isLab": false
+        },
+        {
+          "name": "Meng Z",
+          "isLab": false
+        },
+        {
+          "name": "Thompson-Ceccato S",
+          "isLab": false
+        },
+        {
+          "name": "Mitchell J",
+          "isLab": false
+        },
+        {
+          "name": "Bayik D",
+          "isLab": false
+        },
+        {
+          "name": "Carbone A",
+          "isLab": false
+        },
+        {
+          "name": "Slepak V",
+          "isLab": false
+        },
+        {
+          "name": "Slepak TI",
+          "isLab": false
+        },
+        {
+          "name": "Welford S",
+          "isLab": false
+        },
+        {
+          "name": "Ivan ME",
+          "isLab": false
+        },
+        {
+          "name": "Wang D",
+          "isLab": false
+        },
+        {
+          "name": "Goldberg B",
+          "isLab": false
+        },
+        {
+          "name": "Baringer W",
+          "isLab": false
+        },
+        {
+          "name": "Maradzike E",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "Nature",
+      "year": "2026",
+      "detail": "",
+      "kind": "accepted",
+      "preprint": false,
+      "inPress": true,
+      "links": [],
+      "embargoed": true
+    },
+    {
+      "title": "Systematic mapping of chimera-permissive sites by CRISPR-guided PAM scanning",
+      "authors": [
+        {
+          "name": "Pujols J",
+          "isLab": false
+        },
+        {
+          "name": "Lee KD",
+          "isLab": false
+        },
+        {
+          "name": "Kapolka NJ",
+          "isLab": false
+        },
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Colon B",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "JBC",
+      "year": "2026",
+      "detail": "",
+      "kind": "accepted",
+      "preprint": false,
+      "inPress": true,
+      "links": [
+        {
+          "label": "Preprint",
+          "href": "https://doi.org/10.64898/2026.05.06.723292"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Proton-gating of opioid receptors and isoform functionality",
+      "authors": [
+        {
+          "name": "Lee KD",
+          "isLab": false
+        },
+        {
+          "name": "Surana G",
+          "isLab": false
+        },
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "bioRxiv",
+      "year": "2026",
+      "detail": "",
+      "kind": "preprint",
+      "preprint": true,
+      "inPress": false,
+      "links": [
+        {
+          "label": "Preprint",
+          "href": "https://doi.org/10.64898/2026.05.26.727816"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Modulating proton sensing by the adenosine receptor A2",
+      "authors": [
+        {
+          "name": "Lee KD",
+          "isLab": false
+        },
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "bioRxiv",
+      "year": "2026",
+      "detail": "",
+      "kind": "preprint",
+      "preprint": true,
+      "inPress": false,
+      "links": [
+        {
+          "label": "Preprint",
+          "href": "https://doi.org/10.64898/2026.05.26.727808"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Next-generation genetically encoded biosensors for spatiotemporal intracellular pH monitoring, mapping, and profiling",
+      "authors": [
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Colon B",
+          "isLab": false
+        },
+        {
+          "name": "Lee KD",
+          "isLab": false
+        },
+        {
+          "name": "Arcuri J",
+          "isLab": false
+        },
+        {
+          "name": "Chandthakuri S",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "bioRxiv",
+      "year": "2026",
+      "detail": "",
+      "kind": "preprint",
+      "preprint": true,
+      "inPress": false,
+      "links": [
+        {
+          "label": "Preprint",
+          "href": "https://doi.org/10.64898/2026.05.19.726343"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Protocol for CRISPR genome editing in S. cerevisiae using PCR-based guide insertion",
+      "authors": [
+        {
+          "name": "Rostamian H",
+          "isLab": false
+        },
+        {
+          "name": "Madden EW",
+          "isLab": false
+        },
+        {
+          "name": "Kaplan FM",
+          "isLab": false
+        },
+        {
+          "name": "Kim RS",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Strahl BD",
+          "isLab": false
+        }
+      ],
+      "venue": "STAR Protoc",
+      "year": "2026",
+      "detail": "7(3):104751",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1016/j.xpro.2026.104751"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/42519825/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13449778/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Lactate-Activated GPR132 Signaling Drives a Tumor Microenvironmental Autocrine Metabolic Loop in Kidney Cancer",
+      "authors": [
+        {
+          "name": "Wang D",
+          "isLab": false
+        },
+        {
+          "name": "Horton TM",
+          "isLab": false
+        },
+        {
+          "name": "Lee KD",
+          "isLab": false
+        },
+        {
+          "name": "Ogobuiro IC",
+          "isLab": false
+        },
+        {
+          "name": "Vatankhah F",
+          "isLab": false
+        },
+        {
+          "name": "de Andrade I",
+          "isLab": false
+        },
+        {
+          "name": "Pisano JC",
+          "isLab": false
+        },
+        {
+          "name": "Thakur VS",
+          "isLab": false
+        },
+        {
+          "name": "Gurevich MK",
+          "isLab": false
+        },
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Alyamani M",
+          "isLab": false
+        },
+        {
+          "name": "Gannamedi DP",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Lombard DB",
+          "isLab": false
+        },
+        {
+          "name": "Griswold AJ",
+          "isLab": false
+        },
+        {
+          "name": "Sharifi N",
+          "isLab": false
+        },
+        {
+          "name": "Tcheuyap VT",
+          "isLab": false
+        },
+        {
+          "name": "Brugarolas J",
+          "isLab": false
+        },
+        {
+          "name": "Gonzalgo ML",
+          "isLab": false
+        },
+        {
+          "name": "Kryvenko ON",
+          "isLab": false
+        },
+        {
+          "name": "Welford SM",
+          "isLab": false
+        }
+      ],
+      "venue": "Cancer Res",
+      "year": "2026",
+      "detail": "",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1158/0008-5472.CAN-25-3236"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/42258526/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Nonredundant roles for paralogous proteins in the yeast glucose-sensing pathway",
+      "authors": [
+        {
+          "name": "Si Y",
+          "isLab": false
+        },
+        {
+          "name": "Adhikari K",
+          "isLab": false
+        },
+        {
+          "name": "Herring LE",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Li S",
+          "isLab": false
+        },
+        {
+          "name": "Lyons SP",
+          "isLab": false
+        },
+        {
+          "name": "McRitchie SL",
+          "isLab": false
+        },
+        {
+          "name": "Rushing BR",
+          "isLab": false
+        },
+        {
+          "name": "Sumner SJ",
+          "isLab": false
+        },
+        {
+          "name": "Dohlman HG",
+          "isLab": false
+        }
+      ],
+      "venue": "Mol Biol Cell",
+      "year": "2026",
+      "detail": "37(2):ar15",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1091/mbc.E25-10-0475"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/41400924/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12879016/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "PIONEER: A periplasmic display platform for synthetic biology-based screening of genetically encoded protein regulators",
+      "authors": [
+        {
+          "name": "Rowe JB",
+          "isLab": false
+        },
+        {
+          "name": "Lee K",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "J Biol Chem",
+      "year": "2026",
+      "detail": "302(1):110967",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1016/j.jbc.2025.110967"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/41274507/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12796099/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Advances in yeast synthetic biology for human G protein-coupled receptor biology and pharmacology",
+      "authors": [
+        {
+          "name": "Kapolka NJ",
+          "isLab": false
+        },
+        {
+          "name": "Taghon GJ",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "Curr Opin Biotechnol",
+      "year": "2024",
+      "detail": "88:103176",
+      "kind": "review",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1016/j.copbio.2024.103176"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/39079313/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12557331/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "GPR1 and CMKLR1 Control Lipid Metabolism to Support the Development of Clear Cell Renal Cell Carcinoma",
+      "authors": [
+        {
+          "name": "Wang D",
+          "isLab": false
+        },
+        {
+          "name": "Mahmud I",
+          "isLab": false
+        },
+        {
+          "name": "Thakur VS",
+          "isLab": false
+        },
+        {
+          "name": "Tan SK",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Lombard DB",
+          "isLab": false
+        },
+        {
+          "name": "Gonzalgo ML",
+          "isLab": false
+        },
+        {
+          "name": "Kryvenko ON",
+          "isLab": false
+        },
+        {
+          "name": "Lorenzi PL",
+          "isLab": false
+        },
+        {
+          "name": "Tcheuyap VT",
+          "isLab": false
+        },
+        {
+          "name": "Brugarolas J",
+          "isLab": false
+        },
+        {
+          "name": "Welford SM",
+          "isLab": false
+        }
+      ],
+      "venue": "Cancer Res",
+      "year": "2024",
+      "detail": "84(13):2141-2154",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1158/0008-5472.CAN-23-2926"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/38640229/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11290988/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Location-biased activation of the proton-sensor GPR65 is uncoupled from receptor trafficking",
+      "authors": [
+        {
+          "name": "Morales Rodríguez LM",
+          "isLab": false
+        },
+        {
+          "name": "Crilly SE",
+          "isLab": false
+        },
+        {
+          "name": "Rowe JB",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Puthenveedu MA",
+          "isLab": false
+        }
+      ],
+      "venue": "Proc Natl Acad Sci U S A",
+      "year": "2023",
+      "detail": "120(39):e2302823120",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1073/pnas.2302823120"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/37722051/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10523530/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Proton-gated coincidence detection is a common feature of GPCR signaling",
+      "authors": [
+        {
+          "name": "Kapolka NJ",
+          "isLab": false
+        },
+        {
+          "name": "Rowe JB",
+          "isLab": false
+        },
+        {
+          "name": "Taghon GJ",
+          "isLab": false
+        },
+        {
+          "name": "Morgan WM",
+          "isLab": false
+        },
+        {
+          "name": "O'Shea CR",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "Proc Natl Acad Sci U S A",
+      "year": "2021",
+      "detail": "118(28):e2100171118",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1073/pnas.2100171118"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/34260394/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8285908/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Predictable cholesterol binding sites in GPCRs lack consensus motifs",
+      "authors": [
+        {
+          "name": "Taghon GJ",
+          "isLab": false
+        },
+        {
+          "name": "Rowe JB",
+          "isLab": false
+        },
+        {
+          "name": "Kapolka NJ",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "Structure",
+      "year": "2021",
+      "detail": "29(5):499-506.e3",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1016/j.str.2021.01.004"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/33508215/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9162085/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "One Year of SARS-CoV-2: How Much Has the Virus Changed?",
+      "authors": [
+        {
+          "name": "Vilar S",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "Biology (Basel)",
+      "year": "2021",
+      "detail": "10(2):91",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.3390/biology10020091"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/33530355/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7911924/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "The evolution and mechanism of GPCR proton sensing",
+      "authors": [
+        {
+          "name": "Rowe JB",
+          "isLab": false
+        },
+        {
+          "name": "Kapolka NJ",
+          "isLab": false
+        },
+        {
+          "name": "Taghon GJ",
+          "isLab": false
+        },
+        {
+          "name": "Morgan WM",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "J Biol Chem",
+      "year": "2021",
+      "detail": "296:100167",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1074/jbc.RA120.016352"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/33478938/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7948426/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "HCAR3: an underexplored metabolite sensor",
+      "authors": [
+        {
+          "name": "Kapolka NJ",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "Nat Rev Drug Discov",
+      "year": "2020",
+      "detail": "19(11):745",
+      "kind": "review",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1038/d41573-020-00173-2"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/33009526/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9162084/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "An acidic residue buried in the dimer interface of isocitrate dehydrogenase 1 (IDH1) helps regulate catalysis and pH sensitivity",
+      "authors": [
+        {
+          "name": "Luna LA",
+          "isLab": false
+        },
+        {
+          "name": "Lesecq Z",
+          "isLab": false
+        },
+        {
+          "name": "White KA",
+          "isLab": false
+        },
+        {
+          "name": "Hoang A",
+          "isLab": false
+        },
+        {
+          "name": "Scott DA",
+          "isLab": false
+        },
+        {
+          "name": "Zagnitko O",
+          "isLab": false
+        },
+        {
+          "name": "Bobkov AA",
+          "isLab": false
+        },
+        {
+          "name": "Barber DL",
+          "isLab": false
+        },
+        {
+          "name": "Schiffer JM",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Sohl CD",
+          "isLab": false
+        }
+      ],
+      "venue": "Biochem J",
+      "year": "2020",
+      "detail": "477(16):2999-3018",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1042/BCJ20200311"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/32729927/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7996970/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "CRISPR-addressable yeast strains with applications in human G protein-coupled receptor profiling and synthetic biology",
+      "authors": [
+        {
+          "name": "Rowe JB",
+          "isLab": false
+        },
+        {
+          "name": "Taghon GJ",
+          "isLab": false
+        },
+        {
+          "name": "Kapolka NJ",
+          "isLab": false
+        },
+        {
+          "name": "Morgan WM",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "J Biol Chem",
+      "year": "2020",
+      "detail": "295(24):8262-8271",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1074/jbc.RA120.013066"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/32358068/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7294089/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "DCyFIR: a high-throughput CRISPR platform for multiplexed G protein-coupled receptor profiling and ligand discovery",
+      "authors": [
+        {
+          "name": "Kapolka NJ",
+          "isLab": false
+        },
+        {
+          "name": "Taghon GJ",
+          "isLab": false
+        },
+        {
+          "name": "Rowe JB",
+          "isLab": false
+        },
+        {
+          "name": "Morgan WM",
+          "isLab": false
+        },
+        {
+          "name": "Enten JF",
+          "isLab": false
+        },
+        {
+          "name": "Lambert NA",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "Proc Natl Acad Sci U S A",
+      "year": "2020",
+      "detail": "117(23):13117-13126",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1073/pnas.2000430117"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/32434907/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7293659/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Regulation of Mitochondrial Respiratory Chain Complex Levels, Organization, and Function by Arginyltransferase 1",
+      "authors": [
+        {
+          "name": "Jiang C",
+          "isLab": false
+        },
+        {
+          "name": "Moorthy BT",
+          "isLab": false
+        },
+        {
+          "name": "Patel DM",
+          "isLab": false
+        },
+        {
+          "name": "Kumar A",
+          "isLab": false
+        },
+        {
+          "name": "Morgan WM",
+          "isLab": false
+        },
+        {
+          "name": "Alfonso B",
+          "isLab": false
+        },
+        {
+          "name": "Huang J",
+          "isLab": false
+        },
+        {
+          "name": "Lampidis TJ",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Barrientos A",
+          "isLab": false
+        },
+        {
+          "name": "Fontanesi F",
+          "isLab": false
+        },
+        {
+          "name": "Zhang F",
+          "isLab": false
+        }
+      ],
+      "venue": "Front Cell Dev Biol",
+      "year": "2020",
+      "detail": "8:603688",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.3389/fcell.2020.603688"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/33409279/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779560/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Mutations in ATP1A1 Cause Dominant Charcot-Marie-Tooth Type 2",
+      "authors": [
+        {
+          "name": "Lassuthova P",
+          "isLab": false
+        },
+        {
+          "name": "Rebelo AP",
+          "isLab": false
+        },
+        {
+          "name": "Ravenscroft G",
+          "isLab": false
+        },
+        {
+          "name": "Lamont PJ",
+          "isLab": false
+        },
+        {
+          "name": "Davis MR",
+          "isLab": false
+        },
+        {
+          "name": "Manganelli F",
+          "isLab": false
+        },
+        {
+          "name": "Feely SM",
+          "isLab": false
+        },
+        {
+          "name": "Bacon C",
+          "isLab": false
+        },
+        {
+          "name": "Brožková DŠ",
+          "isLab": false
+        },
+        {
+          "name": "Haberlova J",
+          "isLab": false
+        },
+        {
+          "name": "Mazanec R",
+          "isLab": false
+        },
+        {
+          "name": "Tao F",
+          "isLab": false
+        },
+        {
+          "name": "Saghira C",
+          "isLab": false
+        },
+        {
+          "name": "Abreu L",
+          "isLab": false
+        },
+        {
+          "name": "Courel S",
+          "isLab": false
+        },
+        {
+          "name": "Powell E",
+          "isLab": false
+        },
+        {
+          "name": "Buglo E",
+          "isLab": false
+        },
+        {
+          "name": "Bis DM",
+          "isLab": false
+        },
+        {
+          "name": "Baxter MF",
+          "isLab": false
+        },
+        {
+          "name": "Ong RW",
+          "isLab": false
+        },
+        {
+          "name": "Marns L",
+          "isLab": false
+        },
+        {
+          "name": "Lee YC",
+          "isLab": false
+        },
+        {
+          "name": "Bai Y",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Barro-Soria R",
+          "isLab": false
+        },
+        {
+          "name": "Chung KW",
+          "isLab": false
+        },
+        {
+          "name": "Scherer SS",
+          "isLab": false
+        },
+        {
+          "name": "Larsson HP",
+          "isLab": false
+        },
+        {
+          "name": "Laing NG",
+          "isLab": false
+        },
+        {
+          "name": "Choi BO",
+          "isLab": false
+        },
+        {
+          "name": "Seeman P",
+          "isLab": false
+        },
+        {
+          "name": "Shy ME",
+          "isLab": false
+        },
+        {
+          "name": "Santoro L",
+          "isLab": false
+        },
+        {
+          "name": "Zuchner S",
+          "isLab": false
+        }
+      ],
+      "venue": "Am J Hum Genet",
+      "year": "2018",
+      "detail": "102(3):505-514",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1016/j.ajhg.2018.01.023"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/29499166/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5985288/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Coordinated regulation of intracellular pH by two glucose-sensing pathways in yeast",
+      "authors": [
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Page SC",
+          "isLab": false
+        },
+        {
+          "name": "Collins LB",
+          "isLab": false
+        },
+        {
+          "name": "Kapolka NJ",
+          "isLab": false
+        },
+        {
+          "name": "Taghon GJ",
+          "isLab": false
+        },
+        {
+          "name": "Dohlman HG",
+          "isLab": false
+        }
+      ],
+      "venue": "J Biol Chem",
+      "year": "2018",
+      "detail": "293(7):2318-2329",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1074/jbc.RA117.000422"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/29284676/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5818193/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Amino acid metabolites that regulate G protein signaling during osmotic stress",
+      "authors": [
+        {
+          "name": "Shellhammer JP",
+          "isLab": false
+        },
+        {
+          "name": "Morin-Kensicki E",
+          "isLab": false
+        },
+        {
+          "name": "Matson JP",
+          "isLab": false
+        },
+        {
+          "name": "Yin G",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Campbell SL",
+          "isLab": false
+        },
+        {
+          "name": "Mohney RP",
+          "isLab": false
+        },
+        {
+          "name": "Dohlman HG",
+          "isLab": false
+        }
+      ],
+      "venue": "PLoS Genet",
+      "year": "2017",
+      "detail": "13(5):e1006829",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1371/journal.pgen.1006829"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/28558063/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5469498/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Regulation of Ras Paralog Thermostability by Networks of Buried Ionizable Groups",
+      "authors": [
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Sridharan V",
+          "isLab": false
+        },
+        {
+          "name": "Dohlman HG",
+          "isLab": false
+        }
+      ],
+      "venue": "Biochemistry",
+      "year": "2016",
+      "detail": "55(3):534-42",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1021/acs.biochem.5b00901"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/26701741/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5574170/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Buried ionizable networks are an ancient hallmark of G protein-coupled receptor activation",
+      "authors": [
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Dohlman HG",
+          "isLab": false
+        }
+      ],
+      "venue": "Proc Natl Acad Sci U S A",
+      "year": "2015",
+      "detail": "112(18):5702-7",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1073/pnas.1417888112"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/25902551/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4426463/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Differences in the regulation of K-Ras and H-Ras isoforms by monoubiquitination",
+      "authors": [
+        {
+          "name": "Baker R",
+          "isLab": false
+        },
+        {
+          "name": "Wilkerson EM",
+          "isLab": false
+        },
+        {
+          "name": "Sumita K",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Sasaki AT",
+          "isLab": false
+        },
+        {
+          "name": "Dohlman HG",
+          "isLab": false
+        },
+        {
+          "name": "Campbell SL",
+          "isLab": false
+        }
+      ],
+      "venue": "J Biol Chem",
+      "year": "2013",
+      "detail": "288(52):36856-62",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1074/jbc.C113.525691"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/24247240/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3873545/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Protons as second messenger regulators of G protein signaling",
+      "authors": [
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Sridharan V",
+          "isLab": false
+        },
+        {
+          "name": "Baker R",
+          "isLab": false
+        },
+        {
+          "name": "Clement ST",
+          "isLab": false
+        },
+        {
+          "name": "Smalley DM",
+          "isLab": false
+        },
+        {
+          "name": "Dohlman HG",
+          "isLab": false
+        }
+      ],
+      "venue": "Mol Cell",
+      "year": "2013",
+      "detail": "51(4):531-8",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1016/j.molcel.2013.07.012"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23954348/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3770139/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "A miniaturized technique for assessing protein thermodynamics and function using fast determination of quantitative cysteine reactivity",
+      "authors": [
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Marguet PR",
+          "isLab": false
+        },
+        {
+          "name": "Oas TG",
+          "isLab": false
+        },
+        {
+          "name": "Hellinga HW",
+          "isLab": false
+        }
+      ],
+      "venue": "Proteins",
+      "year": "2011",
+      "detail": "79(4):1034-47",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1002/prot.22932"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/21387407/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3139720/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Large shifts in pKa values of lysine residues buried inside a protein",
+      "authors": [
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Castañeda CA",
+          "isLab": false
+        },
+        {
+          "name": "Cannon BR",
+          "isLab": false
+        },
+        {
+          "name": "García-Moreno B",
+          "isLab": false
+        }
+      ],
+      "venue": "Proc Natl Acad Sci U S A",
+      "year": "2011",
+      "detail": "108(13):5260-5",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1073/pnas.1010750108"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/21389271/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3069169/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Charges in the hydrophobic interior of proteins",
+      "authors": [
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Castañeda CA",
+          "isLab": false
+        },
+        {
+          "name": "Cannon BR",
+          "isLab": false
+        },
+        {
+          "name": "Velu PD",
+          "isLab": false
+        },
+        {
+          "name": "García-Moreno E B",
+          "isLab": false
+        }
+      ],
+      "venue": "Proc Natl Acad Sci U S A",
+      "year": "2010",
+      "detail": "107(37):16096-100",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1073/pnas.1004213107"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20798341/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2941338/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Picomole-scale characterization of protein stability and function by quantitative cysteine reactivity",
+      "authors": [
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Vardy E",
+          "isLab": false
+        },
+        {
+          "name": "Oas TG",
+          "isLab": false
+        },
+        {
+          "name": "Hellinga HW",
+          "isLab": false
+        }
+      ],
+      "venue": "Proc Natl Acad Sci U S A",
+      "year": "2010",
+      "detail": "107(11):4908-13",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1073/pnas.0910421107"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/20194783/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2841886/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "The pK(a) values of acidic and basic residues buried at the same internal location in a protein are governed by different factors",
+      "authors": [
+        {
+          "name": "Harms MJ",
+          "isLab": false
+        },
+        {
+          "name": "Castañeda CA",
+          "isLab": false
+        },
+        {
+          "name": "Schlessman JL",
+          "isLab": false
+        },
+        {
+          "name": "Sue GR",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Cannon BR",
+          "isLab": false
+        },
+        {
+          "name": "García-Moreno E B",
+          "isLab": false
+        }
+      ],
+      "venue": "J Mol Biol",
+      "year": "2009",
+      "detail": "389(1):34-47",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1016/j.jmb.2009.03.039"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/19324049/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3373015/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "High tolerance for ionizable residues in the hydrophobic interior of proteins",
+      "authors": [
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Cannon BR",
+          "isLab": false
+        },
+        {
+          "name": "Castañeda CA",
+          "isLab": false
+        },
+        {
+          "name": "Robinson A",
+          "isLab": false
+        },
+        {
+          "name": "García-Moreno B",
+          "isLab": false
+        }
+      ],
+      "venue": "Proc Natl Acad Sci U S A",
+      "year": "2008",
+      "detail": "105(46):17784-8",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1073/pnas.0805113105"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/19004768/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2584708/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "V(i)-value analysis: a pressure-based method for mapping the folding transition state ensemble of proteins",
+      "authors": [
+        {
+          "name": "Mitra L",
+          "isLab": false
+        },
+        {
+          "name": "Hata K",
+          "isLab": false
+        },
+        {
+          "name": "Kono R",
+          "isLab": false
+        },
+        {
+          "name": "Maeno A",
+          "isLab": false
+        },
+        {
+          "name": "Isom D",
+          "isLab": true
+        },
+        {
+          "name": "Rouget JB",
+          "isLab": false
+        },
+        {
+          "name": "Winter R",
+          "isLab": false
+        },
+        {
+          "name": "Akasaka K",
+          "isLab": false
+        },
+        {
+          "name": "García-Moreno B",
+          "isLab": false
+        },
+        {
+          "name": "Royer CA",
+          "isLab": false
+        }
+      ],
+      "venue": "J Am Chem Soc",
+      "year": "2007",
+      "detail": "129(46):14108-9",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1021/ja073576y"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/17960902/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Hydration of the folding transition state ensemble of a protein",
+      "authors": [
+        {
+          "name": "Brun L",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Velu P",
+          "isLab": false
+        },
+        {
+          "name": "García-Moreno B",
+          "isLab": false
+        },
+        {
+          "name": "Royer CA",
+          "isLab": false
+        }
+      ],
+      "venue": "Biochemistry",
+      "year": "2006",
+      "detail": "45(11):3473-80",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1021/bi052638z"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/16533028/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4442614/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Local secondary structure content predicts folding rates for simple, two-state proteins",
+      "authors": [
+        {
+          "name": "Gong H",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Srinivasan R",
+          "isLab": false
+        },
+        {
+          "name": "Rose GD",
+          "isLab": false
+        }
+      ],
+      "venue": "J Mol Biol",
+      "year": "2003",
+      "detail": "327(5):1149-54",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1016/s0022-2836(03)00211-0"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/12662937/"
+        }
+      ],
+      "embargoed": false
+    }
+  ]
+}

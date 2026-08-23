@@ -1,0 +1,129 @@
+---
+import { site } from '../data/site.js';
+import { url, isActive } from '../utils/url.js';
+const here = Astro.url.pathname;
+---
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href={url('/')}>
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">
+        <strong>Isom Lab</strong>
+        <span>University of Miami</span>
+      </span>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul>
+        {site.nav.map((item) => (
+          <li>
+            <a href={url(item.href)} aria-current={isActive(item.href, here) ? 'page' : undefined}>
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <button id="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.2" />
+        <path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.3 6.3 4.8 4.8M19.2 19.2l-1.5-1.5M17.7 6.3l1.5-1.5M4.8 19.2l1.5-1.5" />
+      </svg>
+    </button>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    min-height: 66px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    text-decoration: none;
+    margin-right: auto;
+  }
+  .brand-mark {
+    width: 26px; height: 26px;
+    flex: none;
+    border-radius: 50%;
+    background: radial-gradient(circle at 32% 30%, var(--accent), var(--green) 78%);
+  }
+  .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+  .brand-text strong {
+    font-family: var(--font-display);
+    font-size: 1.12rem;
+    letter-spacing: -0.01em;
+  }
+  .brand-text span {
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+
+  nav ul {
+    display: flex;
+    gap: clamp(0.9rem, 2.4vw, 1.9rem);
+    list-style: none;
+    margin: 0; padding: 0;
+  }
+  nav a {
+    font-size: 0.92rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--ink-muted);
+    padding-block: 0.4rem;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+  nav a:hover { color: var(--ink); }
+  nav a[aria-current='page'] { color: var(--ink); border-bottom-color: var(--accent); }
+
+  #theme-toggle {
+    display: grid; place-items: center;
+    width: 34px; height: 34px;
+    flex: none;
+    border: 1px solid var(--rule);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--ink-muted);
+    cursor: pointer;
+  }
+  #theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+
+  @media (max-width: 720px) {
+    .bar { flex-wrap: wrap; min-height: 0; padding-block: 0.7rem; gap: 0.6rem 1rem; }
+    .brand-text span { display: none; }
+    nav { order: 3; width: 100%; }
+    /* Wrap onto a second row rather than scrolling sideways -- a cut-off
+       "Contact" with a scrollbar under it reads as a broken nav. */
+    nav ul { flex-wrap: wrap; gap: 0.35rem 1.1rem; }
+    nav a { font-size: 0.86rem; }
+  }
+</style>
+
+<script>
+  const root = document.documentElement;
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const current =
+      root.dataset.theme ??
+      (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const next = current === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    localStorage.setItem('theme', next);
+  });
+</script>

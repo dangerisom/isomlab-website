@@ -1,0 +1,96 @@
+---
+import { site } from '../data/site.js';
+import { url } from '../utils/url.js';
+const year = 2026; // build-stamped; bump with the site, not with the clock
+---
+<footer class="site-footer">
+  <div class="wrap grid">
+    <div>
+      <p class="name">{site.name}</p>
+      <address>
+        {site.affiliations.map((a) => <span>{a}</span>)}
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+      </address>
+    </div>
+
+    <nav aria-label="Footer">
+      <p class="head">Lab</p>
+      <ul>
+        {site.nav.map((i) => <li><a href={url(i.href)}>{i.label}</a></li>)}
+      </ul>
+    </nav>
+
+    <div>
+      <p class="head">Elsewhere</p>
+      <ul class="plain">
+        <li><a href={site.social.github}>GitHub</a></li>
+        <li><a href={`https://orcid.org/${site.pi.orcid}`}>ORCID</a></li>
+        <li><a href={site.social.twitter}>X / Twitter</a></li>
+        <li><a href={site.social.linkedin}>LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <div class="funding">
+      <p class="head">Supported by</p>
+      <ul class="plain">
+        {site.funders.map((f) => <li>{f}</li>)}
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap base">
+    <p>© {year} Isom Lab. All rights reserved.</p>
+    <p>Miami, Florida</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--rule);
+    background: var(--paper-sunk);
+    padding-block: clamp(2.5rem, 6vw, 4rem) 1.5rem;
+    font-size: 0.9rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1.6fr repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+  .name {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+  address { font-style: normal; display: flex; flex-direction: column; gap: 0.15rem; color: var(--ink-muted); }
+  address a { margin-top: 0.5rem; color: var(--ink); }
+  .head {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 0.7rem;
+  }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.35rem; }
+  ul a { text-decoration: none; color: var(--ink-muted); }
+  ul a:hover { color: var(--accent-ink); }
+  .funding li { color: var(--ink-muted); line-height: 1.4; }
+  .base {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+  }
+  .base p { margin: 0; }
+  @media (max-width: 800px) {
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid > :first-child { grid-column: 1 / -1; }
+  }
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+    .base { flex-direction: column; }
+  }
+</style>

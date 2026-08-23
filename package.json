@@ -1,0 +1,20 @@
+{
+  "name": "isomlab-website",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "sync:pubs": "node scripts/sync-publications.mjs",
+    "dev": "npm run sync:pubs && astro dev",
+    "build": "npm run sync:pubs && astro build",
+    "preview": "astro preview",
+    "images": "node scripts/make-images.mjs",
+    "sync:software": "node scripts/sync-software.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.2.4"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}

@@ -1,0 +1,204 @@
+---
+import Base from '../layouts/Base.astro';
+import Citation from '../components/Citation.astro';
+import { site } from '../data/site.js';
+import { areas, approaches } from '../data/research.js';
+import { software } from '../data/software.js';
+import pubs from '../data/publications.json';
+import { url } from '../utils/url.js';
+
+const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
+const released = software.filter((s) => !s.isCore).length;
+---
+<Base>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Miller School of Medicine&nbsp;· Sylvester Comprehensive Cancer Center</p>
+      <h1>
+        How cells sense their environment,{' '}
+        <span class="alt">cooperate, and adapt to stress.</span>
+      </h1>
+      <p class="lede">
+        We study proton sensing by GPCRs, the dark proteome, and the cellular bridges
+        that carry cargo between cells — using computation, imaging, and synthetic
+        biology across cancer cells, yeast, and <em>C. elegans</em>.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href={url('/research')}>Our research</a>
+        <a class="btn" href={url('/publications')}>Publications</a>
+      </div>
+    </div>
+
+    <div class="stats wrap">
+      <div><strong>{pubs.counts.total}</strong><span>peer-reviewed papers &amp; preprints</span></div>
+      <div><strong>{released}</strong><span>open-source tools released</span></div>
+      <div><strong>3</strong><span>research directions</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">What we study</p>
+      <div class="areas">
+        {areas.map((a) => (
+          <a class="area" href={url(`/research#${a.id}`)}>
+            <span class="num">{a.number}</span>
+            <h3>{a.title}</h3>
+            <p>{a.lede}</p>
+            <span class="more">Read more</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">How we work</p>
+      <div class="approach">
+        {approaches.map((a) => (
+          <div>
+            <h3>{a.title}</h3>
+            <p>{a.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap head-row">
+      <div>
+        <p class="eyebrow">Recent work</p>
+        <h2>Selected publications</h2>
+      </div>
+      <a class="btn" href={url('/publications')}>All {pubs.counts.total} publications</a>
+    </div>
+    <div class="wrap list">
+      {recent.map((p) => <Citation pub={p} />)}
+    </div>
+  </section>
+
+  <section class="section software">
+    <div class="wrap head-row">
+      <div>
+        <p class="eyebrow">Open source</p>
+        <h2>Software from the lab</h2>
+        <p class="lede">
+          Every tool we build for our own work is released, documented, and installable —
+          several through Bioconda.
+        </p>
+      </div>
+      <a class="btn" href={url('/software')}>Browse the tools</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    padding-block: clamp(3.5rem, 11vw, 8rem) 0;
+    background:
+      radial-gradient(ellipse 70% 60% at 82% 8%, var(--accent-soft), transparent 70%),
+      var(--paper);
+  }
+  .hero h1 { max-width: 22ch; margin-bottom: 1.2rem; }
+  .hero .alt { color: var(--ink-muted); }
+  .hero .lede { margin-bottom: 2rem; }
+
+  .cta { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+  .btn {
+    display: inline-block;
+    padding: 0.62rem 1.25rem;
+    border: 1px solid var(--rule-strong);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--ink);
+    white-space: nowrap;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent-ink); }
+  .btn.primary { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .btn.primary:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: clamp(3rem, 8vw, 5.5rem);
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+  .stats div { display: flex; flex-direction: column; gap: 0.2rem; }
+  .stats strong {
+    font-family: var(--font-display);
+    font-size: var(--step-3);
+    line-height: 1;
+    color: var(--accent);
+  }
+  .stats span { font-size: 0.86rem; color: var(--ink-muted); }
+
+  .areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .area {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: clamp(1.5rem, 3vw, 2.4rem);
+    background: var(--paper);
+    text-decoration: none;
+    transition: background 0.18s ease;
+  }
+  .area:hover { background: var(--paper-raised); }
+  .area .num {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+  }
+  .area h3 { font-size: var(--step-1); margin: 0; }
+  .area p { color: var(--ink-muted); font-size: 0.94rem; flex: 1; }
+  .area .more {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .area:hover .more { color: var(--accent); }
+
+  .approach {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(1.5rem, 4vw, 3rem);
+  }
+  .approach h3 {
+    font-size: var(--step-1);
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--accent);
+    display: inline-block;
+  }
+  .approach p { color: var(--ink-muted); font-size: 0.95rem; }
+
+  .head-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  .head-row h2 { margin: 0; }
+  .list { border-top: 1px solid var(--rule); }
+  .software { background: var(--paper-sunk); }
+  .software .lede { margin-top: 0.8rem; }
+  @media (max-width: 620px) {
+    .stats { grid-template-columns: 1fr; gap: 1rem; }
+  }
+</style>

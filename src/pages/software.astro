@@ -1,0 +1,108 @@
+---
+import Base from '../layouts/Base.astro';
+import { software, guides } from '../data/software.js';
+
+const tools = software.filter((s) => !s.isCore);
+const core = software.filter((s) => s.isCore);
+---
+<Base title="Software" description="Open-source tools from the Isom Lab: CRISPR guide design, literature mining, structure analysis, and quantitative microscopy.">
+  <section class="intro">
+    <div class="wrap wrap-prose">
+      <p class="eyebrow">Software</p>
+      <h1>Tools we build and release</h1>
+      <p class="lede">
+        Everything we write for our own experiments is packaged, documented, and made
+        installable. Several are distributed through Bioconda; all of them are on GitHub.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <ul class="tools">
+        {tools.map((t) => (
+          <li>
+            <div class="row">
+              <h3><a href={`https://github.com/${t.repo}`} rel="noopener">{t.name}</a></h3>
+              <div class="badges">
+                {t.version && <span class="ver">{t.version}</span>}
+                {t.conda === 'bioconda' && <span class="conda">Bioconda</span>}
+                {t.conda === 'under review' && <span class="pending">Bioconda — in review</span>}
+              </div>
+            </div>
+            <p>{t.blurb}</p>
+            <ul class="tags">{t.tags.map((tag) => <li>{tag}</li>)}</ul>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section guides">
+    <div class="wrap">
+      <p class="eyebrow">Getting started</p>
+      <h2>New to the lab's tools?</h2>
+      <div class="guide-grid">
+        {guides.map((g) => (
+          <a class="guide" href={g.href} rel="noopener">
+            <h3>{g.title}</h3>
+            <p>{g.blurb}</p>
+          </a>
+        ))}
+      </div>
+
+      {core.map((c) => (
+        <div class="core">
+          <h3>{c.name}</h3>
+          <p>{c.blurb}</p>
+          <a href={`https://github.com/${c.repo}`} rel="noopener">View on GitHub</a>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .intro { padding-block: clamp(3rem, 8vw, 5.5rem) clamp(1rem, 3vw, 2rem); }
+  .tools { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+  .tools > li { padding-block: 1.8rem; border-bottom: 1px solid var(--rule); }
+  .row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .row h3 { font-family: var(--font-mono); font-size: var(--step-1); margin: 0; letter-spacing: -0.02em; }
+  .row h3 a { text-decoration: none; }
+  .row h3 a:hover { color: var(--accent-ink); }
+  .badges { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .ver, .conda, .pending {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .ver { font-family: var(--font-mono); background: var(--paper-sunk); color: var(--ink-muted); border: 1px solid var(--rule); }
+  .conda { background: var(--accent-soft); color: var(--accent-ink); }
+  .pending { border: 1px dashed var(--rule-strong); color: var(--ink-faint); }
+  .tools p { color: var(--ink-muted); max-width: 68ch; margin: 0.6rem 0 0; }
+  .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; list-style: none; margin: 0.9rem 0 0; padding: 0; }
+  .tags li { font-size: 0.74rem; color: var(--ink-faint); }
+  .tags li::before { content: '#'; color: var(--rule-strong); }
+
+  .guides { background: var(--paper-sunk); }
+  .guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-top: 1.8rem; }
+  .guide {
+    display: block;
+    padding: 1.4rem;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .guide:hover { border-color: var(--accent); }
+  .guide h3 { font-size: var(--step-1); margin: 0 0 0.3rem; }
+  .guide p { color: var(--ink-muted); font-size: 0.9rem; margin: 0; }
+  .core { margin-top: 2.5rem; padding-top: 1.8rem; border-top: 1px solid var(--rule); }
+  .core h3 { font-family: var(--font-mono); font-size: var(--step-1); }
+  .core p { color: var(--ink-muted); max-width: 68ch; }
+  .core a { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-faint); text-decoration: none; }
+  .core a:hover { color: var(--accent); }
+</style>

@@ -1,0 +1,153 @@
+---
+import Base from '../layouts/Base.astro';
+import { people, alumni } from '../data/people.js';
+import { url } from '../utils/url.js';
+
+const pi = people.find((p) => p.role === 'pi');
+const members = people.filter((p) => p.role !== 'pi');
+---
+<Base title="People" description="The scientists of the Isom Lab at the University of Miami Miller School of Medicine.">
+  <section class="intro">
+    <div class="wrap wrap-prose">
+      <p class="eyebrow">People</p>
+      <h1>The lab</h1>
+      <p class="lede">
+        We are a group of biologists, physicists, and computational scientists based at
+        the Miller School of Medicine and Sylvester Comprehensive Cancer Center.
+      </p>
+    </div>
+  </section>
+
+  {pi && (
+    <section class="pi-block">
+      <div class="wrap pi-grid">
+        <div class="portrait">
+          <img src={url(`/people/${pi.photo}`)} alt={`Portrait of ${pi.name}`} width="440" height="550" loading="eager" />
+        </div>
+        <div class="pi-body">
+          <p class="eyebrow">Principal Investigator</p>
+          <h2>{pi.name}</h2>
+          {pi.blurb ? <p>{pi.blurb}</p> : <p class="todo">Bio to come.</p>}
+          <ul class="links">
+            {pi.orcid && <li><a href={`https://orcid.org/${pi.orcid}`} rel="noopener">ORCID</a></li>}
+            {pi.links?.github && <li><a href={pi.links.github} rel="noopener">GitHub</a></li>}
+            {pi.links?.twitter && <li><a href={pi.links.twitter} rel="noopener">X / Twitter</a></li>}
+          </ul>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="wrap">
+      <p class="eyebrow">Lab members</p>
+      <ul class="roster">
+        {members.map((p) => (
+          <li>
+            <img src={url(`/people/${p.photo}`)} alt={`Portrait of ${p.name}`} width="320" height="320" loading="lazy" />
+            <h3>{p.name}</h3>
+            {p.title && <p class="role">{p.title}</p>}
+            {p.blurb && <p class="blurb">{p.blurb}</p>}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  {alumni.length > 0 && (
+    <section class="section alumni">
+      <div class="wrap">
+        <p class="eyebrow">Alumni</p>
+        <ul>
+          {alumni.map((a) => (
+            <li><strong>{a.name}</strong> <span>{a.years}</span> {a.now && <em>— now {a.now}</em>}</li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <section class="section join">
+    <div class="wrap wrap-prose">
+      <h2>Join us</h2>
+      <p>
+        We are always glad to hear from prospective graduate students, postdoctoral
+        fellows, and undergraduates interested in signaling, the dark proteome, or
+        quantitative imaging. Write to us and say what you would want to work on.
+      </p>
+      <a class="btn" href={url('/contact')}>Get in touch</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .intro { padding-block: clamp(3rem, 8vw, 5.5rem) clamp(2rem, 5vw, 3rem); }
+  .pi-block { padding-bottom: clamp(2rem, 6vw, 4rem); }
+  .pi-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+    gap: clamp(1.5rem, 5vw, 3.5rem);
+    align-items: center;
+  }
+  .portrait img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 3px;
+    background: var(--paper-sunk);
+  }
+  .pi-body h2 { margin-bottom: 0.8rem; }
+  .todo { color: var(--ink-faint); font-style: italic; }
+  .links { display: flex; gap: 1.2rem; list-style: none; margin: 1.4rem 0 0; padding: 0; }
+  .links a {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ink-faint);
+  }
+  .links a:hover { color: var(--accent); }
+
+  .roster {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+  }
+  .roster img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 3px;
+    background: var(--paper-sunk);
+    margin-bottom: 0.9rem;
+  }
+  .roster h3 { font-size: var(--step-1); margin: 0 0 0.2rem; }
+  .role { font-size: 0.85rem; color: var(--accent); margin: 0; }
+  .blurb { font-size: 0.9rem; color: var(--ink-muted); margin-top: 0.5rem; }
+
+  .alumni ul { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-direction: column; gap: 0.5rem; }
+  .alumni span { color: var(--ink-faint); }
+
+  .join { background: var(--paper-sunk); }
+  .btn {
+    display: inline-block;
+    margin-top: 0.6rem;
+    padding: 0.62rem 1.25rem;
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--paper);
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  @media (max-width: 760px) {
+    .pi-grid { grid-template-columns: 1fr; }
+    .portrait { max-width: 280px; }
+  }
+</style>

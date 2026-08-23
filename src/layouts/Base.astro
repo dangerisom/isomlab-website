@@ -1,0 +1,78 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { site } from '../data/site.js';
+import { url } from '../utils/url.js';
+
+const {
+  title,
+  description = site.description,
+  ogImage = '/og-default.png',
+  wide = false,
+} = Astro.props;
+
+const pageTitle = title ? `${title} — ${site.name}` : `${site.name} — University of Miami`;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? 'https://www.isomlab.com');
+const ogUrl = new URL(url(ogImage), Astro.site ?? 'https://www.isomlab.com');
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.href} />
+
+    <!-- Social preview: what people see when the lab is shared on X, LinkedIn, Slack -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:image" content={ogUrl.href} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@danIsomLab" />
+
+    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+    />
+
+    <script is:inline>
+      // Set the theme before first paint so there is no flash of the wrong palette.
+      (() => {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.dataset.theme = saved;
+        }
+      })();
+    </script>
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ResearchOrganization',
+        name: site.name,
+        url: 'https://www.isomlab.com',
+        parentOrganization: { '@type': 'CollegeOrUniversity', name: 'University of Miami' },
+        member: { '@type': 'Person', name: site.pi.name, identifier: `https://orcid.org/${site.pi.orcid}` },
+      })}
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main" class={wide ? 'wide' : ''}>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
