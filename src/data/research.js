@@ -5,7 +5,7 @@ export const areas = [
     id: 'ph-sensing',
     number: '01',
     title: 'How cells sense and respond to acidity',
-    lede: 'Proton binding as a signal — in proteins, in cells, and in acidic tissue.',
+    lede: 'Proton binding as a signal and regulator — in proteins, in cells, and in acidic tissue.',
     body: [
       'Acidity is information. pH varies widely across tissues and across compartments within a single cell — inflamed tissue, tumors, endosomes — and proteins read those differences through charge networks whose ionization state shifts with the surrounding proton concentration.',
       'We study this from the residue upward, through electrostatic informatics: mapping charge networks and titratable surfaces across predicted and experimental structures to locate the sites where proton binding is positioned to change what a protein does. Any protein carrying a charged network in the right place is a candidate; G protein-coupled receptors have been a productive proving ground, since many function only within a narrow pH range, but they are one case of a general principle rather than the boundary of the question.',
