@@ -17,6 +17,7 @@ export const people = [
       'Pap Corps Champions for Cancer Research Endowed Chair',
       'Associate Professor of Molecular and Cellular Pharmacology',
       'Sylvester Comprehensive Cancer Center',
+      'Frost Institute for Data Science and Computing',
     ],
     training: [
       'Undergrad: Case Western Reserve University',
@@ -63,29 +64,31 @@ export const people = [
 ];
 
 /**
- * Former lab members. `years` and `now` are blank until Dan fills them in;
- * both are optional and simply omitted from the page when empty.
+ * Former lab members, generated from `formerLab` in the CV project's cv_data.js
+ * (~/Documents/Claude/Projects/cv/build/cv_data.js), which is the authoritative
+ * list. `now` is blank until filled in and is simply omitted when empty.
  */
 export const alumni = [
-  {
-    name: 'Kyutae Lee',
-    title: 'MD/PhD Student',
-    program: 'Molecular and Cellular Pharmacology Program',
-    years: '',
-    now: '',
-  },
-  {
-    name: 'Sam Taylor',
-    title: 'Graduate Student',
-    program: 'Cancer Biology Program',
-    years: '',
-    now: '',
-  },
-  {
-    name: 'Jacinda Pujols',
-    title: 'Graduate Student',
-    program: 'Molecular and Cellular Pharmacology',
-    years: '',
-    now: '',
-  },
+  { name: 'Jacinda Pujols', title: 'Graduate Student', program: 'Molecular and Cellular Pharmacology', years: '2023–2026', now: '' },
+  { name: 'Kyutae Lee', title: 'MD/PhD Student', program: 'Molecular and Cellular Pharmacology Program', years: '2021–2026', now: '' },
+  { name: 'Sam Taylor', title: 'Graduate Student', program: 'Cancer Biology Program', years: '2022–2026', now: '' },
+  { name: 'Blake Goldberg', title: 'University of Miami', years: '2022–2025', now: '' },
+  { name: 'Danielle Bitter', title: 'SURF student', program: 'Florida State University', years: '2025', now: '' },
+  { name: 'Frederik Hansson', title: 'Visiting student', program: 'Technical University of Denmark', years: '2024', now: '' },
+  { name: 'Taveion Neasman', title: 'DICR student', program: 'University of Miami', years: '2024', now: '' },
+  { name: 'Alex Weber', title: 'Medical Student', program: 'Pharmacology and Drug Development Pathway', years: '2022–2023', now: '' },
+  { name: 'Dario D’Urso', title: 'University of Miami', years: '2022–2023', now: '' },
+  { name: 'Mason Thornton', title: 'Medical Student', years: '2021–2023', now: '' },
+  { name: 'Sharleen Cineas', title: 'Graduate Student (Masters)', years: '2022–2023', now: '' },
+  { name: 'Sophie Bilik', title: 'Graduate Student (Masters)', years: '2022–2023', now: '' },
+  { name: 'Gorav Surana', title: 'SURF student', program: 'University of Miami', years: '2021–2022', now: '' },
+  { name: 'Jacob Rowe', title: 'Graduate Student (PhD)', program: 'Molecular and Cellular Pharmacology', years: '2018–2022', now: '' },
+  { name: 'Douglas Obenrader', title: 'SURF student', program: 'University of Michigan', years: '2021', now: '' },
+  { name: 'Geoffrey Taghon', title: 'Graduate Student (PhD)', program: 'Molecular and Cellular Pharmacology', years: '2017–2021', now: '' },
+  { name: 'Nicholas Kapolka', title: 'Graduate Student (PhD)', program: 'Molecular and Cellular Pharmacology', years: '2017–2021', now: '' },
+  { name: 'Santiago Vilar', title: 'Research Associate', years: '2020–2021', now: '' },
+  { name: 'Yoland Victor', title: 'SURF student', program: 'University of Miami', years: '2021', now: '' },
+  { name: 'Sofia Perez', title: 'SURF student', years: '2020', now: '' },
+  { name: 'William Morgan', title: 'Research Associate', years: '2018–2020', now: '' },
+  { name: 'Amrita Nalathambi', title: 'SURF student', years: '2019', now: '' },
 ];

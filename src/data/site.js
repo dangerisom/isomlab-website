@@ -7,6 +7,7 @@ export const site = {
     'Department of Molecular and Cellular Pharmacology',
     'University of Miami, Miller School of Medicine',
     'Member, Sylvester Comprehensive Cancer Center',
+    'Frost Institute for Data Science and Computing',
   ],
   pi: { name: 'Daniel G. Isom', orcid: '0000-0001-5637-2370' },
   email: 'disom@med.miami.edu',
