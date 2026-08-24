@@ -28,13 +28,13 @@ export const areas = [
     id: 'intercellular-exchange',
     number: '03',
     title: 'How cells connect, cooperate, and compete for materials',
-    lede: 'Cellular bridges that carry vesicles — and even organelles — between cells, in cooperation and in competition.',
+    lede: 'The modalities of intercellular communication — direct bridges, secreted vesicles, and the cargo they move.',
     body: [
-      'We study how cells physically connect to move material between one another. We recently identified a set of proteins that build cellular bridges and support the transfer of biological cargo — vesicles, and in some cases whole organelles — from cell to cell.',
-      'Those connections can cut both ways. The same machinery that lets cells cooperate, pooling resources and buffering one another against stress, could equally let them compete, with one cell drawing cargo from a neighbor at that neighbor\'s expense. Which behavior dominates, and what decides it, is an open question we are actively pursuing.',
+      'Cells move material between one another through several distinct modalities. Some connect directly, building bridges that carry cargo from cytoplasm to cytoplasm; others release extracellular vesicles — exosomes among them — that travel and are taken up at a distance. We recently identified a set of proteins that build such bridges and support the transfer of biological cargo, including vesicles and in some cases whole organelles.',
+      'Whichever route the cargo takes, the exchange can cut both ways. The same machinery that lets cells cooperate, pooling resources and buffering one another against stress, could equally let them compete, with one cell drawing cargo from a neighbor at that neighbor\'s expense. Which behavior dominates, and what decides it, is an open question we are actively pursuing.',
       'These proteins are more active in certain cancers, which suggests tumors may exploit them to sustain growth or resist stress. The finding has opened a new direction for the lab and sharpened our picture of how cells communicate in both healthy and diseased tissue.',
     ],
-    keywords: ['intercellular transfer', 'tunneling nanotubes', 'organelle exchange', 'resource competition', 'cryo-CLEM'],
+    keywords: ['intercellular communication', 'extracellular vesicles', 'exosomes', 'tunneling nanotubes', 'organelle exchange', 'cryo-CLEM'],
   },
 ];
 
