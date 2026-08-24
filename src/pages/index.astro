@@ -30,10 +30,11 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
       {/* Built from src/assets/RICTOR-3D-connection-1.mp4 -- see the README for
           how, and for what was retouched. Plays forward then backward, so the
           loop has no seam.
-          Channels: TM184C and LysoTracker, re-pseudocoloured into the site
-          palette by scripts/recolor-channels.py. The third channel -- the grey
-          one, presumably nuclei -- is unconfirmed, so the caption leaves it
-          out. TODO(dan): name it and it can go in. */}
+          The channels are TM184C (orange) and LysoTracker (green), recoloured
+          by scripts/recolor-channels.py; the blue one is as acquired.
+          The caption names none of them on purpose -- the paper is still under
+          embargo. TODO(dan): put the labels back when it publishes, alongside
+          deleting the EMBARGOED line in scripts/sync-publications.mjs. */}
       <figure
         class="banner"
         style={`--banner-poster: url(${url('/media/intercellular-connection.jpg')})`}
@@ -51,7 +52,7 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
           <source src={url('/media/intercellular-connection.webm')} type="video/webm" />
           <source src={url('/media/intercellular-connection.mp4')} type="video/mp4" />
         </video>
-        <figcaption>TM184C (orange) and LysoTracker-labelled acidic vesicles (green) moving along a connection between two cells.</figcaption>
+        <figcaption>Live-cell confocal imaging of vesicles moving along a connection between two cells.</figcaption>
       </figure>
     </div>
   </section>

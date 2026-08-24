@@ -76,8 +76,9 @@ What that script does, and why:
    under the text are reconstructed, not measured** — fine for a banner,
    not something to reuse in a figure.
 2. **Re-pseudocolours the channels into the site palette** — TM184C from magenta
-   to `--accent` orange, LysoTracker from yellow to `--green`, nuclei to a dim
-   warm grey. The source is a flattened composite, but the mixing was additive
+   to `--accent` orange and LysoTracker from yellow to `--green`. The third
+   channel keeps the blue it was acquired in. The source is a flattened
+   composite, but the mixing was additive
    and each channel had its own hue, so the three separate cleanly
    (`scripts/recolor-channels.py` explains the arithmetic, including the one
    correction needed where magenta and yellow overlap and the red channel

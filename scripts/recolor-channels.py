@@ -34,11 +34,11 @@ import sys
 import numpy as np
 from PIL import Image
 
-# Site palette: --accent, --green, and a dim warm grey near --ink-faint so the
-# nuclei read as context and let the two real channels carry the image.
-TM184C = (0xE8, 0x83, 0x4A)      # --accent, UM orange
+# The two vesicle channels move into the site palette; the third keeps the blue
+# it was acquired in (measured at (0, 0, 255) in the source) -- Dan's call.
+TM184C = (0xE8, 0x83, 0x4A)       # --accent, UM orange
 LYSOTRACKER = (0x4D, 0x9B, 0x7A)  # --green
-NUCLEI = (0x4A, 0x45, 0x40)
+NUCLEI = (0x00, 0x00, 0xFF)       # unchanged from the original composite
 
 # Orange and bluish-green are the one pair that stays separable across the
 # common colour-vision deficiencies; magenta/yellow did too, so this keeps that
