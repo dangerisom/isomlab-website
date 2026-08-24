@@ -6,7 +6,9 @@ import { areas, approaches } from '../data/research.js';
 import pubs from '../data/publications.json';
 import { url } from '../utils/url.js';
 
-const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
+// Six, not four: preprints sort below published work within a year, so a
+// shorter list is all journal articles and the heading over-promises.
+const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 6);
 ---
 <Base>
   <section class="hero">
