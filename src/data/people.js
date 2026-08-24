@@ -31,6 +31,15 @@ export const people = [
     },
   },
   {
+    slug: 'auristela-rivera',
+    name: 'Auristela Rivera',
+    title: 'Lab Manager',
+    program: '',
+    role: 'member',
+    photo: 'auristela.jpg',
+    blurb: '', // TODO: bio -- never appeared on the Wix page
+  },
+  {
     slug: 'bruno-colon',
     name: 'Bruno Colon',
     title: 'Graduate Student',
