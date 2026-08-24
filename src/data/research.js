@@ -20,7 +20,7 @@ export const areas = [
     lede: 'Roughly 30% of human proteins remain structurally and functionally uncharacterized.',
     body: [
       'A large share of the human proteome — about 30 percent — remains poorly understood. These are the dark proteins: we know little about their structure and less about what they do.',
-      'We work to bring them into view, particularly those with hidden roles in cancer. The most elusive we call "superdark" proteins: they adopt folds similar to known proteins while sharing almost no sequence identity, which makes them invisible to conventional homology tools. AI-based structure prediction has finally made them tractable, and we use it to ask how they contribute to health and disease.',
+      'We work to bring them into view, particularly those with hidden roles in cell biology, cancer, and other diseases. The most elusive we call "superdark" proteins: they adopt folds similar to known proteins while sharing almost no sequence identity, which makes them invisible to conventional homology tools. AI-based structure prediction has finally made them tractable, and we use it to ask how they contribute to health and disease.',
     ],
     keywords: ['dark proteome', 'superdark proteins', 'structure prediction', 'AlphaFold'],
   },
