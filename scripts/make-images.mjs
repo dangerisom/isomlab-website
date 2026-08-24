@@ -16,9 +16,9 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const pub = join(root, 'public');
 mkdirSync(join(pub, 'people'), { recursive: true });
 
-const INK = '#14110e';
-const PAPER = '#fbfaf8';
-const ACCENT = '#b34a12';
+const INK = '#f2ede6';
+const PAPER = '#12100e';
+const ACCENT = '#e8834a';
 const GREEN = '#005030';
 
 /* --- favicon ------------------------------------------------------------- */
@@ -57,9 +57,9 @@ const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" vi
 
   <text x="92" y="290" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="${INK}">How cells sense their</text>
   <text x="92" y="372" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="${INK}">environment, cooperate,</text>
-  <text x="92" y="454" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#5c554d">and adapt</text>
+  <text x="92" y="454" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#a9a099">and adapt</text>
 
-  <text x="92" y="552" font-family="Helvetica, Arial, sans-serif" font-size="25" letter-spacing="1.6" fill="#8b8279">UNIVERSITY OF MIAMI  ·  SYLVESTER COMPREHENSIVE CANCER CENTER</text>
+  <text x="92" y="552" font-family="Helvetica, Arial, sans-serif" font-size="25" letter-spacing="1.6" fill="#7d746c">UNIVERSITY OF MIAMI  ·  SYLVESTER COMPREHENSIVE CANCER CENTER</text>
 </svg>`;
 
 await sharp(Buffer.from(og)).png().toFile(join(pub, 'og-default.png'));

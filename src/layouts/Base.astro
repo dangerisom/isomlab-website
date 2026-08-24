@@ -45,16 +45,6 @@ const ogUrl = new URL(url(ogImage), Astro.site ?? 'https://www.isomlab.com');
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
     />
 
-    <script is:inline>
-      // Set the theme before first paint so there is no flash of the wrong palette.
-      (() => {
-        const saved = localStorage.getItem('theme');
-        if (saved === 'light' || saved === 'dark') {
-          document.documentElement.dataset.theme = saved;
-        }
-      })();
-    </script>
-
     <script
       type="application/ld+json"
       set:html={JSON.stringify({

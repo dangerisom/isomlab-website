@@ -7,18 +7,22 @@
    as a text color and used sparingly: rules, section numerals, link underlines.
    --------------------------------------------------------------------------- */
 :root {
-  --paper:        #fbfaf8;
-  --paper-raised: #ffffff;
-  --paper-sunk:   #f2efea;
-  --ink:          #14110e;
-  --ink-muted:    #5c554d;
-  --ink-faint:    #8b8279;
-  --rule:         #e2ddd5;
-  --rule-strong:  #cdc6bb;
-  --accent:       #b34a12;
-  --accent-soft:  #f6e7dc;
-  --accent-ink:   #8c3a0e;
-  --green:        #005030;
+  color-scheme: dark;
+
+  /* The site is dark by design -- it does not follow the OS or the browser's
+     night-time setting, so every visitor sees the same page. */
+  --paper:        #12100e;
+  --paper-raised: #1b1815;
+  --paper-sunk:   #0c0a09;
+  --ink:          #f2ede6;
+  --ink-muted:    #a9a099;
+  --ink-faint:    #7d746c;
+  --rule:         #2e2925;
+  --rule-strong:  #453e38;
+  --accent:       #e8834a;
+  --accent-soft:  #2b1a10;
+  --accent-ink:   #f3a173;
+  --green:        #4d9b7a;
 
   --font-display: 'Source Serif 4', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
   --font-body: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -34,38 +38,6 @@
   --step-2:  clamp(1.5rem, 1.34rem + 0.8vw, 2rem);
   --step-3:  clamp(1.9rem, 1.6rem + 1.5vw, 2.9rem);
   --step-4:  clamp(2.4rem, 1.8rem + 3vw, 4.4rem);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --paper:        #12100e;
-    --paper-raised: #1b1815;
-    --paper-sunk:   #0c0a09;
-    --ink:          #f2ede6;
-    --ink-muted:    #a9a099;
-    --ink-faint:    #7d746c;
-    --rule:         #2e2925;
-    --rule-strong:  #453e38;
-    --accent:       #e8834a;
-    --accent-soft:  #2b1a10;
-    --accent-ink:   #f3a173;
-    --green:        #4d9b7a;
-  }
-}
-
-:root[data-theme='dark'] {
-  --paper:        #12100e;
-  --paper-raised: #1b1815;
-  --paper-sunk:   #0c0a09;
-  --ink:          #f2ede6;
-  --ink-muted:    #a9a099;
-  --ink-faint:    #7d746c;
-  --rule:         #2e2925;
-  --rule-strong:  #453e38;
-  --accent:       #e8834a;
-  --accent-soft:  #2b1a10;
-  --accent-ink:   #f3a173;
-  --green:        #4d9b7a;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
