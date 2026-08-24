@@ -61,6 +61,24 @@ export const people = [
     blurb:
       'I was born and raised in Europe by a nomadic band of gypsies that trained me in the dark art of confocal microscopy. I soon developed an interest in how heavy small things are and bartered a trade to a druid colony where I received additional training in mass spectroscopy. My friends will often hear me say, "If you can do mass spec in a cave, you can do it at UM."',
   },
+  {
+    slug: 'saahit-adabala',
+    name: 'Saahit Adabala',
+    title: 'Medical Student',
+    program: 'DREAM Scholar',
+    role: 'member',
+    photo: 'saahit.jpg',
+    blurb: '', // TODO: bio -- no copy for this one existed on the Wix page
+  },
+  {
+    slug: 'robin-pyait',
+    name: 'Robin Pyait',
+    title: 'Graduate Student (Masters)',
+    program: '',
+    role: 'member',
+    photo: 'robin.jpg',
+    blurb: '', // TODO: bio -- no copy for this one existed on the Wix page
+  },
 ];
 
 /**

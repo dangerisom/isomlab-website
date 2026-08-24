@@ -82,10 +82,10 @@ for (const p of people) {
   const out = join(pub, 'people', p.photo);
   if (existsSync(out)) continue;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
-    <rect width="800" height="1000" fill="#f2efea"/>
-    <circle cx="400" cy="500" r="150" fill="#e2ddd5"/>
-    <text x="400" y="548" text-anchor="middle" font-family="Georgia, serif" font-size="120" fill="#a49b91">${initials(p.name)}</text>
-    <text x="400" y="760" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="2" fill="#b8b0a6">PHOTO TO COME</text>
+    <rect width="800" height="1000" fill="#1b1815"/>
+    <circle cx="400" cy="500" r="150" fill="#252019"/>
+    <text x="400" y="548" text-anchor="middle" font-family="Georgia, serif" font-size="120" fill="#6d645c">${initials(p.name)}</text>
+    <text x="400" y="760" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="26" letter-spacing="2" fill="#4a433d">PHOTO TO COME</text>
   </svg>`;
   await sharp(Buffer.from(svg)).jpeg({ quality: 88 }).toFile(out);
   made++;
