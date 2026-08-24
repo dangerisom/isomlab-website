@@ -57,6 +57,41 @@ npm run images        # favicon, og-default.png, any missing placeholder portrai
 The social card (`public/og-default.png`, 1200×630) is what X, LinkedIn, and Slack
 show when someone shares the site. Regenerate it if the wordmark or palette changes.
 
+## The homepage banner
+
+`public/media/intercellular-connection.{webm,mp4,jpg}` — a looping clip of an
+intercellular connection, built from `src/assets/RICTOR-3D-connection-1.mp4`
+(one of Jen's 3D reconstructions, 1554×930 at 8 fps). Rebuild with:
+
+```bash
+scripts/make-banner.sh
+```
+
+What that script does, and why:
+
+1. **Paints out the burned-in timestamp and scale bar.** Both are printed into
+   the pixels, and the timestamp sits directly on top of vesicles near the
+   right-hand cell, so a black box would have erased real signal. The glyphs are
+   masked and filled from their surroundings instead. **The vesicles that were
+   under the text are reconstructed, not measured** — fine for a banner,
+   not something to reuse in a figure.
+2. **Rotates by 23.66°**, the measured angle of the connection, so it runs level
+   with the page. The angle came from a weighted principal-axis fit to the
+   vesicle signal, not from eyeballing it.
+3. **Crops to 1740×350 (~5:1)** — a wide strip centred on the connection,
+   with one cell anchoring each end. Rotation padding is black and so is the
+   background, so the seams do not show.
+4. **Plays forward then backward** — 68 frames, 8.5 s — so the loop has no jump
+   cut. The clip is only 35 frames long; a straight loop visibly snaps.
+
+The right-hand cell is cut off along a diagonal. That is the edge of the
+original field of view, not a cropping choice.
+
+**If you want a better one**, re-export from Imaris with the overlays turned off
+and at a higher resolution — 1554 px wide is under 1.4× for a 1180 px banner,
+and nothing here can add detail that was not captured. Then rerun the script;
+step 1 becomes a no-op on its own.
+
 ## Software versions
 
 ```bash

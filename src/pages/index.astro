@@ -26,6 +26,34 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
         <a class="btn primary" href={url('/research')}>Our research</a>
         <a class="btn" href={url('/publications')}>Publications</a>
       </div>
+
+      {/* Built from src/assets/RICTOR-3D-connection-1.mp4 -- see the README for
+          how, and for what was retouched. Plays forward then backward, so the
+          loop has no seam.
+          TODO(dan): confirm the channels before this goes live. The caption
+          deliberately claims nothing about which colour is which. */}
+      <figure
+        class="banner"
+        style={`--banner-poster: url(${url('/media/intercellular-connection.jpg')})`}
+      >
+        <video
+          poster={url('/media/intercellular-connection.jpg')}
+          width="1740"
+          height="350"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        >
+          <source src={url('/media/intercellular-connection.webm')} type="video/webm" />
+          <source src={url('/media/intercellular-connection.mp4')} type="video/mp4" />
+        </video>
+        <figcaption>
+          Live-cell confocal imaging of an intercellular connection: vesicles moving
+          along a bridge between two cells.
+        </figcaption>
+      </figure>
     </div>
   </section>
 
@@ -97,6 +125,41 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
   .hero h1 { max-width: 22ch; margin-bottom: 1.2rem; }
   .hero .alt { color: var(--ink-muted); }
   .hero .lede { margin-bottom: 2rem; }
+
+  .banner { margin: 3rem 0 0; }
+  .banner video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1740 / 350;
+    /* `contain`, not `cover`: if the crop in make-banner.sh ever changes and
+       this ratio does not, the clip letterboxes against a black background
+       nobody can see, rather than silently cropping the cells off the ends. */
+    object-fit: contain;
+    border-radius: 10px;
+    border: 1px solid var(--rule);
+    background: #000;
+  }
+  .banner figcaption {
+    margin-top: 0.7rem;
+    max-width: var(--measure);
+    color: var(--ink-muted);
+    font-size: 0.85rem;
+  }
+
+  /* Anyone who has asked the OS to stop motion gets the poster frame instead.
+     No script involved -- the still is the video's own first frame. */
+  @media (prefers-reduced-motion: reduce) {
+    .banner video { display: none; }
+    .banner::before {
+      content: '';
+      display: block;
+      aspect-ratio: 1740 / 350;
+      background: #000 var(--banner-poster) center / cover no-repeat;
+      border-radius: 10px;
+      border: 1px solid var(--rule);
+    }
+  }
 
   .cta { display: flex; flex-wrap: wrap; gap: 0.8rem; }
   .btn {

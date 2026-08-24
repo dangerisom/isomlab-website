@@ -4,3 +4,6 @@ dist/
 .DS_Store
 *.log
 .offline-check/
+
+# Obsidian workspace files -- editor state, not site content
+.obsidian/
