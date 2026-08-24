@@ -27,12 +27,13 @@ export const areas = [
     id: 'intercellular-exchange',
     number: '03',
     title: 'How cells connect, cooperate, and compete for materials',
-    lede: 'Cellular bridges that carry vesicles — and even organelles — between cells.',
+    lede: 'Cellular bridges that carry vesicles — and even organelles — between cells, in cooperation and in competition.',
     body: [
-      'We study how cells physically connect to exchange material with one another. We recently identified a set of proteins that build cellular bridges and support the transfer of biological cargo — vesicles, and in some cases whole organelles — from cell to cell.',
+      'We study how cells physically connect to move material between one another. We recently identified a set of proteins that build cellular bridges and support the transfer of biological cargo — vesicles, and in some cases whole organelles — from cell to cell.',
+      'Those connections can cut both ways. The same machinery that lets cells cooperate, pooling resources and buffering one another against stress, could equally let them compete, with one cell drawing cargo from a neighbor at that neighbor\'s expense. Which behavior dominates, and what decides it, is an open question we are actively pursuing.',
       'These proteins are more active in certain cancers, which suggests tumors may exploit them to sustain growth or resist stress. The finding has opened a new direction for the lab and sharpened our picture of how cells communicate in both healthy and diseased tissue.',
     ],
-    keywords: ['intercellular transfer', 'tunneling nanotubes', 'organelle exchange', 'cryo-CLEM'],
+    keywords: ['intercellular transfer', 'tunneling nanotubes', 'organelle exchange', 'resource competition', 'cryo-CLEM'],
   },
 ];
 
