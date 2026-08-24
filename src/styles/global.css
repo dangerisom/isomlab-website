@@ -125,7 +125,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* Sections still breathe, but not so much that the homepage takes four screens
    to scroll. The rule between them carries the separation that the extra
    padding used to. */
-.section { padding-block: clamp(2.5rem, 5.5vw, 4.5rem); }
+.section { padding-block: clamp(2rem, 4vw, 3.25rem); }
 .section + .section { border-top: 1px solid var(--rule); }
 
 .skip-link {
