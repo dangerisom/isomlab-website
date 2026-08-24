@@ -8,7 +8,7 @@
 export const people = [
   {
     slug: 'daniel-isom',
-    name: 'Daniel Gerard Isom, PhD',
+    name: 'Daniel G. Isom',
     title: 'Principal Investigator',
     role: 'pi',
     photo: 'dan.jpg',
