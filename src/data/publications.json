@@ -7,255 +7,6 @@
   },
   "items": [
     {
-      "title": "TM184C is a GPCR-like regulator of intercellular exchange and autophagy",
-      "authors": [
-        {
-          "name": "Lee K",
-          "isLab": false
-        },
-        {
-          "name": "Taylor S",
-          "isLab": false
-        },
-        {
-          "name": "Arcuri J",
-          "isLab": false
-        },
-        {
-          "name": "Chandthakuri S",
-          "isLab": false
-        },
-        {
-          "name": "Pujols J",
-          "isLab": false
-        },
-        {
-          "name": "Colon B",
-          "isLab": false
-        },
-        {
-          "name": "Wang Q",
-          "isLab": false
-        },
-        {
-          "name": "Wu C",
-          "isLab": false
-        },
-        {
-          "name": "Meng Z",
-          "isLab": false
-        },
-        {
-          "name": "Thompson-Ceccato S",
-          "isLab": false
-        },
-        {
-          "name": "Mitchell J",
-          "isLab": false
-        },
-        {
-          "name": "Bayik D",
-          "isLab": false
-        },
-        {
-          "name": "Carbone A",
-          "isLab": false
-        },
-        {
-          "name": "Slepak V",
-          "isLab": false
-        },
-        {
-          "name": "Slepak TI",
-          "isLab": false
-        },
-        {
-          "name": "Welford S",
-          "isLab": false
-        },
-        {
-          "name": "Ivan ME",
-          "isLab": false
-        },
-        {
-          "name": "Wang D",
-          "isLab": false
-        },
-        {
-          "name": "Goldberg B",
-          "isLab": false
-        },
-        {
-          "name": "Baringer W",
-          "isLab": false
-        },
-        {
-          "name": "Maradzike E",
-          "isLab": false
-        },
-        {
-          "name": "Isom DG",
-          "isLab": true
-        }
-      ],
-      "venue": "Nature",
-      "year": "2026",
-      "detail": "",
-      "kind": "accepted",
-      "preprint": false,
-      "inPress": true,
-      "links": [],
-      "embargoed": true
-    },
-    {
-      "title": "Systematic mapping of chimera-permissive sites by CRISPR-guided PAM scanning",
-      "authors": [
-        {
-          "name": "Pujols J",
-          "isLab": false
-        },
-        {
-          "name": "Lee KD",
-          "isLab": false
-        },
-        {
-          "name": "Kapolka NJ",
-          "isLab": false
-        },
-        {
-          "name": "Taylor S",
-          "isLab": false
-        },
-        {
-          "name": "Colon B",
-          "isLab": false
-        },
-        {
-          "name": "Isom DG",
-          "isLab": true
-        }
-      ],
-      "venue": "JBC",
-      "year": "2026",
-      "detail": "",
-      "kind": "accepted",
-      "preprint": false,
-      "inPress": true,
-      "links": [
-        {
-          "label": "Preprint",
-          "href": "https://doi.org/10.64898/2026.05.06.723292"
-        }
-      ],
-      "embargoed": false
-    },
-    {
-      "title": "Proton-gating of opioid receptors and isoform functionality",
-      "authors": [
-        {
-          "name": "Lee KD",
-          "isLab": false
-        },
-        {
-          "name": "Surana G",
-          "isLab": false
-        },
-        {
-          "name": "Taylor S",
-          "isLab": false
-        },
-        {
-          "name": "Isom DG",
-          "isLab": true
-        }
-      ],
-      "venue": "bioRxiv",
-      "year": "2026",
-      "detail": "",
-      "kind": "preprint",
-      "preprint": true,
-      "inPress": false,
-      "links": [
-        {
-          "label": "Preprint",
-          "href": "https://doi.org/10.64898/2026.05.26.727816"
-        }
-      ],
-      "embargoed": false
-    },
-    {
-      "title": "Modulating proton sensing by the adenosine receptor A2",
-      "authors": [
-        {
-          "name": "Lee KD",
-          "isLab": false
-        },
-        {
-          "name": "Taylor S",
-          "isLab": false
-        },
-        {
-          "name": "Isom DG",
-          "isLab": true
-        }
-      ],
-      "venue": "bioRxiv",
-      "year": "2026",
-      "detail": "",
-      "kind": "preprint",
-      "preprint": true,
-      "inPress": false,
-      "links": [
-        {
-          "label": "Preprint",
-          "href": "https://doi.org/10.64898/2026.05.26.727808"
-        }
-      ],
-      "embargoed": false
-    },
-    {
-      "title": "Next-generation genetically encoded biosensors for spatiotemporal intracellular pH monitoring, mapping, and profiling",
-      "authors": [
-        {
-          "name": "Taylor S",
-          "isLab": false
-        },
-        {
-          "name": "Colon B",
-          "isLab": false
-        },
-        {
-          "name": "Lee KD",
-          "isLab": false
-        },
-        {
-          "name": "Arcuri J",
-          "isLab": false
-        },
-        {
-          "name": "Chandthakuri S",
-          "isLab": false
-        },
-        {
-          "name": "Isom DG",
-          "isLab": true
-        }
-      ],
-      "venue": "bioRxiv",
-      "year": "2026",
-      "detail": "",
-      "kind": "preprint",
-      "preprint": true,
-      "inPress": false,
-      "links": [
-        {
-          "label": "Preprint",
-          "href": "https://doi.org/10.64898/2026.05.19.726343"
-        }
-      ],
-      "embargoed": false
-    },
-    {
       "title": "Protocol for CRISPR genome editing in S. cerevisiae using PCR-based guide insertion",
       "authors": [
         {
@@ -511,6 +262,255 @@
         {
           "label": "PMC",
           "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12796099/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "TM184C is a GPCR-like regulator of intercellular exchange and autophagy",
+      "authors": [
+        {
+          "name": "Lee K",
+          "isLab": false
+        },
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Arcuri J",
+          "isLab": false
+        },
+        {
+          "name": "Chandthakuri S",
+          "isLab": false
+        },
+        {
+          "name": "Pujols J",
+          "isLab": false
+        },
+        {
+          "name": "Colon B",
+          "isLab": false
+        },
+        {
+          "name": "Wang Q",
+          "isLab": false
+        },
+        {
+          "name": "Wu C",
+          "isLab": false
+        },
+        {
+          "name": "Meng Z",
+          "isLab": false
+        },
+        {
+          "name": "Thompson-Ceccato S",
+          "isLab": false
+        },
+        {
+          "name": "Mitchell J",
+          "isLab": false
+        },
+        {
+          "name": "Bayik D",
+          "isLab": false
+        },
+        {
+          "name": "Carbone A",
+          "isLab": false
+        },
+        {
+          "name": "Slepak V",
+          "isLab": false
+        },
+        {
+          "name": "Slepak TI",
+          "isLab": false
+        },
+        {
+          "name": "Welford S",
+          "isLab": false
+        },
+        {
+          "name": "Ivan ME",
+          "isLab": false
+        },
+        {
+          "name": "Wang D",
+          "isLab": false
+        },
+        {
+          "name": "Goldberg B",
+          "isLab": false
+        },
+        {
+          "name": "Baringer W",
+          "isLab": false
+        },
+        {
+          "name": "Maradzike E",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "Nature",
+      "year": "2026",
+      "detail": "",
+      "kind": "accepted",
+      "preprint": false,
+      "inPress": true,
+      "links": [],
+      "embargoed": true
+    },
+    {
+      "title": "Systematic mapping of chimera-permissive sites by CRISPR-guided PAM scanning",
+      "authors": [
+        {
+          "name": "Pujols J",
+          "isLab": false
+        },
+        {
+          "name": "Lee KD",
+          "isLab": false
+        },
+        {
+          "name": "Kapolka NJ",
+          "isLab": false
+        },
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Colon B",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "JBC",
+      "year": "2026",
+      "detail": "",
+      "kind": "accepted",
+      "preprint": false,
+      "inPress": true,
+      "links": [
+        {
+          "label": "Preprint",
+          "href": "https://doi.org/10.64898/2026.05.06.723292"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Proton-gating of opioid receptors and isoform functionality",
+      "authors": [
+        {
+          "name": "Lee KD",
+          "isLab": false
+        },
+        {
+          "name": "Surana G",
+          "isLab": false
+        },
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "bioRxiv",
+      "year": "2026",
+      "detail": "",
+      "kind": "preprint",
+      "preprint": true,
+      "inPress": false,
+      "links": [
+        {
+          "label": "Preprint",
+          "href": "https://doi.org/10.64898/2026.05.26.727816"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Modulating proton sensing by the adenosine receptor A2",
+      "authors": [
+        {
+          "name": "Lee KD",
+          "isLab": false
+        },
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "bioRxiv",
+      "year": "2026",
+      "detail": "",
+      "kind": "preprint",
+      "preprint": true,
+      "inPress": false,
+      "links": [
+        {
+          "label": "Preprint",
+          "href": "https://doi.org/10.64898/2026.05.26.727808"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Next-generation genetically encoded biosensors for spatiotemporal intracellular pH monitoring, mapping, and profiling",
+      "authors": [
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Colon B",
+          "isLab": false
+        },
+        {
+          "name": "Lee KD",
+          "isLab": false
+        },
+        {
+          "name": "Arcuri J",
+          "isLab": false
+        },
+        {
+          "name": "Chandthakuri S",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "bioRxiv",
+      "year": "2026",
+      "detail": "",
+      "kind": "preprint",
+      "preprint": true,
+      "inPress": false,
+      "links": [
+        {
+          "label": "Preprint",
+          "href": "https://doi.org/10.64898/2026.05.19.726343"
         }
       ],
       "embargoed": false

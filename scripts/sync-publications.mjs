@@ -99,10 +99,12 @@ const items = records
       embargoed,
     };
   })
-  // Newest first; in-press and preprints sort above published work of the same year.
+  // Newest year first. Within a year: published work, then accepted/in-press,
+  // then preprints -- so the peer-reviewed record leads and unreviewed work
+  // does not sit above it. Sort is stable, so ORCID's order breaks ties.
   .sort((a, b) => {
     if (a.year !== b.year) return Number(b.year) - Number(a.year);
-    const rank = (p) => (p.inPress ? 0 : p.preprint ? 1 : 2);
+    const rank = (p) => (p.preprint ? 2 : p.inPress ? 1 : 0);
     return rank(a) - rank(b);
   });
 
