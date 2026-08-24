@@ -4,8 +4,9 @@ export const site = {
   description:
     'The Isom Lab at the University of Miami Miller School of Medicine studies pH sensing by GPCRs, the dark proteome, and intercellular exchange — combining computation, imaging, and synthetic biology.',
   affiliations: [
+    'Department of Molecular and Cellular Pharmacology',
     'University of Miami, Miller School of Medicine',
-    'Sylvester Comprehensive Cancer Center',
+    'Member, Sylvester Comprehensive Cancer Center',
     'Frost Institute for Data Science and Computing',
   ],
   pi: { name: 'Daniel G. Isom', orcid: '0000-0001-5637-2370' },
