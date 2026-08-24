@@ -27,7 +27,18 @@ const members = people.filter((p) => p.role !== 'pi');
         <div class="pi-body">
           <p class="eyebrow">Principal Investigator</p>
           <h2>{pi.name}</h2>
-          {pi.blurb ? <p>{pi.blurb}</p> : <p class="todo">Bio to come.</p>}
+          {pi.appointments && (
+            <ul class="appointments">
+              {pi.appointments.map((a) => <li>{a}</li>)}
+            </ul>
+          )}
+          {pi.blurb && <p>{pi.blurb}</p>}
+          {pi.training && (
+            <dl class="training">
+              <dt>Training</dt>
+              {pi.training.map((t) => <dd>{t}</dd>)}
+            </dl>
+          )}
           <ul class="links">
             {pi.orcid && <li><a href={`https://orcid.org/${pi.orcid}`} rel="noopener">ORCID</a></li>}
             {pi.links?.github && <li><a href={pi.links.github} rel="noopener">GitHub</a></li>}
@@ -47,6 +58,7 @@ const members = people.filter((p) => p.role !== 'pi');
             <img src={url(`/people/${p.photo}`)} alt={`Portrait of ${p.name}`} width="320" height="320" loading="lazy" />
             <h3>{p.name}</h3>
             {p.title && <p class="role">{p.title}</p>}
+            {p.program && <p class="program">{p.program}</p>}
             {p.blurb && <p class="blurb">{p.blurb}</p>}
           </li>
         ))}
@@ -57,10 +69,16 @@ const members = people.filter((p) => p.role !== 'pi');
   {alumni.length > 0 && (
     <section class="section alumni">
       <div class="wrap">
-        <p class="eyebrow">Alumni</p>
+        <p class="eyebrow">Former members</p>
         <ul>
           {alumni.map((a) => (
-            <li><strong>{a.name}</strong> <span>{a.years}</span> {a.now && <em>— now {a.now}</em>}</li>
+            <li>
+              <strong>{a.name}</strong>
+              <span>
+                {a.title}{a.program ? ` · ${a.program}` : ''}{a.years ? ` · ${a.years}` : ''}
+              </span>
+              {a.now && <em>Now {a.now}</em>}
+            </li>
           ))}
         </ul>
       </div>
@@ -97,7 +115,18 @@ const members = people.filter((p) => p.role !== 'pi');
     background: var(--paper-sunk);
   }
   .pi-body h2 { margin-bottom: 0.8rem; }
-  .todo { color: var(--ink-faint); font-style: italic; }
+  .appointments { list-style: none; margin: 0 0 1.2rem; padding: 0; display: flex; flex-direction: column; gap: 0.25rem; }
+  .appointments li { color: var(--ink-muted); font-size: 0.95rem; line-height: 1.45; }
+  .appointments li:first-child { color: var(--accent-ink); }
+  .training { margin: 1.4rem 0 0; padding-top: 1.2rem; border-top: 1px solid var(--rule); }
+  .training dt {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 0.5rem;
+  }
+  .training dd { margin: 0 0 0.2rem; font-size: 0.9rem; color: var(--ink-muted); }
   .links { display: flex; gap: 1.2rem; list-style: none; margin: 1.4rem 0 0; padding: 0; }
   .links a {
     font-size: 0.78rem;
@@ -114,7 +143,7 @@ const members = people.filter((p) => p.role !== 'pi');
     margin: 1.5rem 0 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: clamp(1.5rem, 3vw, 2.5rem);
   }
   .roster img {
@@ -127,10 +156,26 @@ const members = people.filter((p) => p.role !== 'pi');
   }
   .roster h3 { font-size: var(--step-1); margin: 0 0 0.2rem; }
   .role { font-size: 0.85rem; color: var(--accent); margin: 0; }
+  .program { font-size: 0.82rem; color: var(--ink-faint); margin: 0.15rem 0 0; line-height: 1.4; }
   .blurb { font-size: 0.9rem; color: var(--ink-muted); margin-top: 0.5rem; }
 
-  .alumni ul { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-direction: column; gap: 0.5rem; }
-  .alumni span { color: var(--ink-faint); }
+  .alumni ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.4rem 0 0;
+    border-top: 1px solid var(--rule);
+  }
+  .alumni li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.2rem 1rem;
+    padding-block: 0.85rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .alumni strong { font-family: var(--font-display); font-size: var(--step-1); font-weight: 600; }
+  .alumni span { color: var(--ink-faint); font-size: 0.87rem; }
+  .alumni em { color: var(--ink-muted); font-size: 0.87rem; font-style: normal; margin-left: auto; }
 
   .join { background: var(--paper-sunk); }
   .btn {
