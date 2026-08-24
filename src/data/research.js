@@ -26,7 +26,7 @@ export const areas = [
   {
     id: 'intercellular-exchange',
     number: '03',
-    title: 'How cells connect, cooperate, and share materials',
+    title: 'How cells connect, cooperate, and compete for materials',
     lede: 'Cellular bridges that carry vesicles — and even organelles — between cells.',
     body: [
       'We study how cells physically connect to exchange material with one another. We recently identified a set of proteins that build cellular bridges and support the transfer of biological cargo — vesicles, and in some cases whole organelles — from cell to cell.',
