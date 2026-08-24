@@ -9,7 +9,8 @@
     "build": "npm run sync:pubs && astro build",
     "preview": "astro preview",
     "images": "node scripts/make-images.mjs",
-    "sync:software": "node scripts/sync-software.mjs"
+    "sync:software": "node scripts/sync-software.mjs",
+    "offline": "node scripts/make-offline.mjs"
   },
   "dependencies": {
     "astro": "^7.2.4"
