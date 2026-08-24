@@ -15,7 +15,7 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 6);
     <div class="wrap">
       <p class="eyebrow">Molecular and Cellular Pharmacology&nbsp;· Sylvester Comprehensive Cancer Center</p>
       <h1>
-        How cells sense their environment,{' '}
+        How normal and cancer cells sense their environment,{' '}
         <span class="alt">cooperate, and adapt</span>
       </h1>
       <p class="lede">
@@ -124,7 +124,10 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 6);
       radial-gradient(ellipse 70% 60% at 82% 8%, var(--accent-soft), transparent 70%),
       var(--paper);
   }
-  .hero h1 { max-width: 22ch; margin-bottom: 1.2rem; }
+  /* 26ch, not the 22ch the shorter headline used: at 22ch this one breaks after
+     "How normal and", leaving the conjunction dangling. Anything from 24ch up
+     gives the same clean three lines. */
+  .hero h1 { max-width: 26ch; margin-bottom: 1.2rem; }
   .hero .alt { color: var(--ink-muted); }
   .hero .lede { margin-bottom: 2rem; }
 
