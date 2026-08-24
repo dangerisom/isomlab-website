@@ -40,7 +40,7 @@ export const areas = [
 export const approaches = [
   {
     title: 'Computational tools',
-    body: 'AI-based structure prediction, molecular docking, and quantitative image analysis of living cells — used to find patterns that are not visible experimentally and to make testable predictions about protein function.',
+    body: 'We build the analysis we need rather than adapting it: ionizable-residue and surface analysis of predicted structures, CRISPR guide and chimera-insertion design across whole reading frames, quantitative measurement of vesicle transfer and cell–cell bridges in live-cell microscopy, and literature-scale mining for hypothesis leads. AI structure prediction and molecular docking sit alongside these. Everything we write is released as open-source, installable software.',
   },
   {
     title: 'Laboratory experiments',
