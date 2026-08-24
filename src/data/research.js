@@ -5,12 +5,13 @@ export const areas = [
     id: 'ph-sensing',
     number: '01',
     title: 'How cells sense and respond to acidity',
-    lede: 'Proton-sensing GPCRs, and how cells adapt to acidic environments.',
+    lede: 'Proton binding as a signal — in proteins, in cells, and in acidic tissue.',
     body: [
-      'We study how cells detect and respond to changes in acidity — a signal that matters throughout the body, and especially in inflamed tissue, tumors, and internal compartments such as endosomes.',
-      'Our focus is on G protein-coupled receptors (GPCRs), the proteins cells use to read their surroundings. We have found that many of these receptors only function properly within a narrow pH range, meaning acidity itself gates their activity. We also study how cells adjust to acidic conditions over time — an adaptation that is essential for survival in environments like the tumor microenvironment.',
+      'Acidity is information. pH varies widely across tissues and across compartments within a single cell — inflamed tissue, tumors, endosomes — and proteins read those differences through networks of ionizable residues whose charge shifts with the surrounding proton concentration.',
+      'We study this from the residue upward. Our structural work maps ionizable networks and titratable surfaces across predicted and experimental structures, locating the sites where proton binding is positioned to change what a protein does. Any protein carrying a charged network in the right place is a candidate; G protein-coupled receptors have been a productive proving ground, since many function only within a narrow pH range, but they are one case of a general principle rather than the boundary of the question.',
+      'At the scale of the whole cell, we ask how acidity is sensed, buffered, and adapted to over time — an adaptation that is essential for survival in environments like the tumor microenvironment, and one we track with genetically encoded pH biosensors.',
     ],
-    keywords: ['GPCR signaling', 'proton sensing', 'tumor microenvironment', 'pH biosensors'],
+    keywords: ['proton sensing', 'ionizable networks', 'pH-dependent function', 'GPCR signaling', 'tumor microenvironment', 'pH biosensors'],
   },
   {
     id: 'dark-proteome',
