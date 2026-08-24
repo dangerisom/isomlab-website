@@ -1,6 +1,6 @@
 export const site = {
   name: 'Isom Lab',
-  tagline: 'How cells sense their environment, cooperate, and adapt to stress.',
+  tagline: 'How cells sense their environment, cooperate, and adapt',
   description:
     'The Isom Lab at the University of Miami Miller School of Medicine studies pH sensing by GPCRs, the dark proteome, and intercellular exchange — combining computation, imaging, and synthetic biology.',
   affiliations: [
