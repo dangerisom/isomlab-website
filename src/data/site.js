@@ -10,7 +10,7 @@ export const site = {
     'Frost Institute for Data Science and Computing',
   ],
   pi: { name: 'Daniel G. Isom', orcid: '0000-0001-5637-2370' },
-  email: 'disom@med.miami.edu',
+  email: 'disom@miami.edu',
   social: {
     github: 'https://github.com/isomlab',
     twitter: 'https://twitter.com/danIsomLab',
