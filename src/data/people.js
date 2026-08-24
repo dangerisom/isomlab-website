@@ -22,7 +22,7 @@ export const people = [
     training: [
       'Undergrad: Case Western Reserve University',
       'Grad: Johns Hopkins, Molecular Biophysics',
-      'Postdocs: Duke and UNC',
+      'Postdocs: Duke and UNC Chapel Hill',
     ],
     blurb: '',
     links: {
