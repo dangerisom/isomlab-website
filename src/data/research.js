@@ -40,14 +40,14 @@ export const areas = [
 export const approaches = [
   {
     title: 'Computational tools',
-    body: 'We build the analysis we need rather than adapting it: ionizable-residue and surface analysis of predicted structures, CRISPR guide and chimera-insertion design across whole reading frames, quantitative measurement of vesicle transfer and cell–cell bridges in live-cell microscopy, and literature-scale mining for hypothesis leads. AI structure prediction and molecular docking sit alongside these. Everything we write is released as open-source, installable software.',
+    body: 'We build the analysis we need rather than adapting it: ionizable-residue and surface analysis of predicted structures, CRISPR guide and chimera design across whole reading frames, quantitative measurement of vesicle transfer and cell–cell bridges in live-cell imaging, and literature-scale hypothesis mining. All of it is released as open-source software.',
   },
   {
     title: 'Laboratory experiments',
-    body: 'Pharmacology, cell biology, and physics applied to signaling: synthetic biology to reprogram cells, genetic screens, advanced light microscopy, mass spectrometry, and — increasingly — cryo-electron microscopy and cryo-electron tomography.',
+    body: 'Pharmacology, cell biology, and physics applied to signaling: synthetic biology to reprogram cells, genetic screens to find what matters, advanced light microscopy to watch it happen, and mass spectrometry to measure what cells make. We are adding cryo-electron microscopy and tomography to resolve these structures in place.',
   },
   {
     title: 'Model systems',
-    body: 'Patient-derived cancer cells, established human cell lines, budding yeast, and the nematode C. elegans. Each exposes a different face of the same biology and helps us judge what will translate.',
+    body: 'Patient-derived cancer cells, established human lines, budding yeast, and the nematode C. elegans. Each exposes a different face of the same biology — yeast for fast genetics, worms for whole-animal context, human cells for what is most likely to translate — and together they tell us which findings hold.',
   },
 ];
