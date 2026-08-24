@@ -39,27 +39,19 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
         class="banner"
         style={`--banner-poster: url(${url('/media/intercellular-connection.jpg')})`}
       >
-        <div class="frame">
-          <video
-            poster={url('/media/intercellular-connection.jpg')}
-            width="1740"
-            height="350"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
-          >
-            <source src={url('/media/intercellular-connection.webm')} type="video/webm" />
-            <source src={url('/media/intercellular-connection.mp4')} type="video/mp4" />
-          </video>
-          {/* Set as page text rather than burned into the movie: stays sharp at
-              any size, and survives re-rendering the clip. Placed in the empty
-              band below the bridge, where nothing is lit in any of the 68
-              frames, with a leader pointing out at the cell each one names. */}
-          <span class="cell-label donor">Donor cell</span>
-          <span class="cell-label acceptor">Acceptor cell</span>
-        </div>
+        <video
+          poster={url('/media/intercellular-connection.jpg')}
+          width="1740"
+          height="350"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+        >
+          <source src={url('/media/intercellular-connection.webm')} type="video/webm" />
+          <source src={url('/media/intercellular-connection.mp4')} type="video/mp4" />
+        </video>
         <figcaption>Live-cell confocal imaging of vesicles moving along a connection between two cells.</figcaption>
       </figure>
     </div>
@@ -135,7 +127,6 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
   .hero .lede { margin-bottom: 2rem; }
 
   .banner { margin: 1.75rem 0 0; }
-  .banner .frame { position: relative; }
   .banner video {
     display: block;
     width: 100%;
@@ -149,41 +140,6 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
     border: 1px solid var(--rule);
     background: #000;
   }
-  .cell-label {
-    position: absolute;
-    bottom: 14%;
-    display: flex;
-    align-items: center;
-    gap: 0.7em;
-    font-size: clamp(0.6rem, 0.82vw, 0.76rem);
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--ink);
-    white-space: nowrap;
-    pointer-events: none;
-    text-shadow: 0 1px 8px #000;
-  }
-  /* The leader fades out towards the cell rather than stopping dead on it. */
-  .cell-label::after {
-    content: '';
-    width: clamp(1.25rem, 3.5vw, 3rem);
-    height: 1px;
-    background: linear-gradient(to right, var(--ink-faint), transparent);
-  }
-  .donor {
-    left: 22%;
-    flex-direction: row-reverse;
-  }
-  .donor::after {
-    background: linear-gradient(to left, var(--ink-faint), transparent);
-  }
-  .acceptor { right: 22%; }
-
-  /* Below this the banner is only ~110px tall and the labels would own it. */
-  @media (max-width: 640px) {
-    .cell-label { display: none; }
-  }
-
   /* No `--measure` cap here: the caption is written to sit on one line under
      the banner. It still wraps on a narrow screen, which is what should
      happen. */
@@ -197,9 +153,7 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
      No script involved -- the still is the video's own first frame. */
   @media (prefers-reduced-motion: reduce) {
     .banner video { display: none; }
-    /* On .frame, not .banner, so the labels keep landing on the image rather
-       than being positioned against the figure plus its caption. */
-    .banner .frame::before {
+    .banner::before {
       content: '';
       display: block;
       aspect-ratio: 1740 / 350;
