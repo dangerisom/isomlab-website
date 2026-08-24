@@ -1,7 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
 import Citation from '../components/Citation.astro';
-import { site } from '../data/site.js';
 import pubs from '../data/publications.json';
 
 const visible = pubs.items.filter((p) => !p.embargoed);
@@ -16,12 +15,7 @@ const years = [...byYear.keys()];
 <Base title="Publications" description={`${visible.length} peer-reviewed papers and preprints from the Isom Lab, synced from ORCID.`}>
   <section class="intro">
     <div class="wrap">
-      <p class="eyebrow">Publications</p>
-      <h1>{visible.length} papers</h1>
-      <p class="lede">
-        Kept in sync with <a href={`https://orcid.org/${site.pi.orcid}`} rel="noopener">ORCID</a>,
-        so this list never drifts from the record.
-      </p>
+      <h1>Publications</h1>
       <nav class="jump" aria-label="Jump to year">
         {years.map((y) => <a href={`#y${y}`}>{y}</a>)}
       </nav>
