@@ -8,10 +8,10 @@ export const areas = [
     lede: 'Proton binding as a signal and regulator — in proteins, in cells, and in acidic tissue.',
     body: [
       'Acidity is information. pH varies widely across tissues and across compartments within a single cell — inflamed tissue, tumors, endosomes — and proteins read those differences through charge networks whose ionization state shifts with the surrounding proton concentration.',
-      'We study this from the residue upward, through electrostatic informatics: mapping charge networks and titratable surfaces across predicted and experimental structures to locate the sites where proton binding is positioned to change what a protein does. Any protein carrying a charged network in the right place is a candidate; G protein-coupled receptors have been a productive proving ground, since many function only within a narrow pH range, but they are one case of a general principle rather than the boundary of the question.',
+      'We study this from the residue upward, through electroinformatics: mapping charge networks and titratable surfaces across predicted and experimental structures to locate the sites where proton binding is positioned to change what a protein does. Any protein carrying a charged network in the right place is a candidate; G protein-coupled receptors have been a productive proving ground, since many function only within a narrow pH range, but they are one case of a general principle rather than the boundary of the question.',
       'At the scale of the whole cell, we ask how acidity is sensed, buffered, and adapted to over time — an adaptation that is essential for survival in environments like the tumor microenvironment, and one we track with genetically encoded pH biosensors.',
     ],
-    keywords: ['proton sensing', 'electrostatic informatics', 'pH-dependent function', 'GPCR signaling', 'tumor microenvironment', 'pH biosensors'],
+    keywords: ['proton sensing', 'electroinformatics', 'pH-dependent function', 'GPCR signaling', 'tumor microenvironment', 'pH biosensors'],
   },
   {
     id: 'dark-proteome',
@@ -41,7 +41,7 @@ export const areas = [
 export const approaches = [
   {
     title: 'Computational tools',
-    body: 'We build the analysis we need rather than adapting it: electrostatic informatics across predicted structures, CRISPR guide and chimera design across whole reading frames, quantitative measurement of vesicle transfer and cell–cell bridges in live-cell imaging, and literature-scale hypothesis mining. All of it is released as open-source software.',
+    body: 'We build the analysis we need rather than adapting it: electroinformatics across predicted structures, CRISPR guide and chimera design across whole reading frames, quantitative measurement of vesicle transfer and cell–cell bridges in live-cell imaging, and literature-scale hypothesis mining. All of it is released as open-source software.',
   },
   {
     title: 'Laboratory experiments',
