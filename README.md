@@ -75,13 +75,24 @@ What that script does, and why:
    masked and filled from their surroundings instead. **The vesicles that were
    under the text are reconstructed, not measured** — fine for a banner,
    not something to reuse in a figure.
-2. **Rotates by 23.66°**, the measured angle of the connection, so it runs level
+2. **Re-pseudocolours the channels into the site palette** — TM184C from magenta
+   to `--accent` orange, LysoTracker from yellow to `--green`, nuclei to a dim
+   warm grey. The source is a flattened composite, but the mixing was additive
+   and each channel had its own hue, so the three separate cleanly
+   (`scripts/recolor-channels.py` explains the arithmetic, including the one
+   correction needed where magenta and yellow overlap and the red channel
+   clips). Pseudocolour is arbitrary by construction, so restating it is not a
+   manipulation — which pixels are lit does not change. Orange and bluish-green
+   were chosen to stay separable under the common colour-vision deficiencies,
+   as magenta and yellow were. Edit the three constants at the top of that
+   script to change them.
+3. **Rotates by 23.66°**, the measured angle of the connection, so it runs level
    with the page. The angle came from a weighted principal-axis fit to the
    vesicle signal, not from eyeballing it.
-3. **Crops to 1740×350 (~5:1)** — a wide strip centred on the connection,
+4. **Crops to 1740×350 (~5:1)** — a wide strip centred on the connection,
    with one cell anchoring each end. Rotation padding is black and so is the
    background, so the seams do not show.
-4. **Plays forward then backward** — 68 frames, 8.5 s — so the loop has no jump
+5. **Plays forward then backward** — 68 frames, 8.5 s — so the loop has no jump
    cut. The clip is only 35 frames long; a straight loop visibly snaps.
 
 The right-hand cell is cut off along a diagonal. That is the edge of the

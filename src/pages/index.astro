@@ -30,8 +30,10 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
       {/* Built from src/assets/RICTOR-3D-connection-1.mp4 -- see the README for
           how, and for what was retouched. Plays forward then backward, so the
           loop has no seam.
-          TODO(dan): confirm the channels before this goes live. The caption
-          deliberately claims nothing about which colour is which. */}
+          Channels: TM184C and LysoTracker, re-pseudocoloured into the site
+          palette by scripts/recolor-channels.py. The third channel -- the grey
+          one, presumably nuclei -- is unconfirmed, so the caption leaves it
+          out. TODO(dan): name it and it can go in. */}
       <figure
         class="banner"
         style={`--banner-poster: url(${url('/media/intercellular-connection.jpg')})`}
@@ -49,10 +51,7 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
           <source src={url('/media/intercellular-connection.webm')} type="video/webm" />
           <source src={url('/media/intercellular-connection.mp4')} type="video/mp4" />
         </video>
-        <figcaption>
-          Live-cell confocal imaging of an intercellular connection: vesicles moving
-          along a bridge between two cells.
-        </figcaption>
+        <figcaption>TM184C (orange) and LysoTracker-labelled acidic vesicles (green) moving along a connection between two cells.</figcaption>
       </figure>
     </div>
   </section>
@@ -140,9 +139,11 @@ const recent = pubs.items.filter((p) => !p.embargoed).slice(0, 4);
     border: 1px solid var(--rule);
     background: #000;
   }
+  /* No `--measure` cap here: the caption is written to sit on one line under
+     the banner. It still wraps on a narrow screen, which is what should
+     happen. */
   .banner figcaption {
     margin-top: 0.7rem;
-    max-width: var(--measure);
     color: var(--ink-muted);
     font-size: 0.85rem;
   }
