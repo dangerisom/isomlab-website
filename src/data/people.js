@@ -77,7 +77,8 @@ export const people = [
     program: 'DREAM Scholar',
     role: 'member',
     photo: 'saahit.jpg',
-    blurb: '', // TODO: bio -- no copy for this one existed on the Wix page
+    blurb:
+      "I come from Tennessee, where I spent high school arguing competitively with strangers and college studying neuroscience and music composition. Somewhere in there I spent an unreasonable stretch of my twenties teaching a machine to write Bach chorales and compose jazz music. I'm now an MD/MPH student at UM and DREAM Scholar in the Isom Lab, and what I want out of all of it is to move medicine and therapeutics forward. Outside the lab, I play an indefensible amount of golf, make music, and write code."
   },
   {
     slug: 'robin-pyait',
