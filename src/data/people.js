@@ -37,7 +37,7 @@ export const people = [
     program: '',
     role: 'member',
     photo: 'auristela.jpg',
-    blurb: '', // TODO: bio -- never appeared on the Wix page
+    blurb: "I am the agent of order in the Isom lab's disordered world."
   },
   {
     slug: 'bruno-colon',
