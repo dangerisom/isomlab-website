@@ -37,7 +37,7 @@ export const people = [
     program: '',
     role: 'member',
     photo: 'auristela.jpg',
-    blurb: "I am the agent of order in the Isom lab's disordered world."
+    blurb: 'I bring order to the Isom Lab’s disordered world.',
   },
   {
     slug: 'bruno-colon',
