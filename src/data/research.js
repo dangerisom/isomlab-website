@@ -4,7 +4,7 @@ export const areas = [
   {
     id: 'ph-sensing',
     number: '01',
-    title: 'How cells sense and respond to tumor acidity',
+    title: 'How cells sense and adapt to tumor acidity',
     lede: 'Proton binding as a signal and regulator — in proteins, in cells, and in acidic tissue.',
     body: [
       'Acidity is information. pH varies widely across tissues and across compartments within a single cell — inflamed tissue, tumors, endosomes — and proteins read those differences through charge networks whose ionization state shifts with the surrounding proton concentration.',
