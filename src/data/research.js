@@ -28,12 +28,13 @@ export const areas = [
   {
     id: 'intercellular-exchange',
     number: '03',
-    title: 'How cells connect, cooperate, and compete for materials',
-    lede: 'The modalities of intercellular communication — direct bridges, secreted vesicles, and the cargo they move.',
+    title: "How cells connect, cooperate, and compete",
+    lede: "Cells share resources. Cancer cells may exploit these hidden networks to survive.",
     body: [
-      'Cells move material between one another through several distinct modalities. Some connect directly, building bridges that carry cargo from cytoplasm to cytoplasm; others release extracellular vesicles — exosomes among them — that travel and are taken up at a distance. We recently identified a set of proteins that build such bridges and support the transfer of biological cargo, including vesicles and in some cases whole organelles.',
-      'Whichever route the cargo takes, the exchange can cut both ways. The same machinery that lets cells cooperate, pooling resources and buffering one another against stress, could equally let them compete, with one cell drawing cargo from a neighbor at that neighbor\'s expense. Which behavior dominates, and what decides it, is an open question we are actively pursuing.',
-      'These proteins are more active in certain cancers, which suggests tumors may exploit them to sustain growth or resist stress. The finding has opened a new direction for the lab and sharpened our picture of how cells communicate in both healthy and diseased tissue.',
+      "Cells do not live in isolation. They exchange materials, resources, and information with their neighbors in ways we are only beginning to understand. Some release tiny packages called extracellular vesicles that can travel to other cells. Others form direct physical bridges, creating cellular highways through which biological cargo can move from one cell to another — including proteins, vesicles, and even entire organelles.",
+      "Our lab recently discovered proteins that help cells build these connections and transfer material between them. The discovery revealed an unexpected system of intercellular communication and raised a fundamental question: Why are cells sharing their resources?",
+      "The answer may depend on context. Cells under stress could cooperate, sharing materials that help their neighbors survive. But the same machinery could enable competition, allowing one cell to acquire valuable resources at another cell's expense. We want to understand what determines who gives, who receives, and how these exchanges change the behavior of both cells.",
+      "This question takes on particular importance in cancer. These newly discovered proteins are elevated in certain cancers, raising the possibility that tumor cells exploit intercellular exchange to acquire resources, adapt to hostile environments, or survive stresses that would otherwise limit their growth.",
     ],
     keywords: ["intercellular communication", "intercellular cooperation", "intercellular competition", "intercellular exploitation"],
   },
