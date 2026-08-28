@@ -123,7 +123,7 @@ Actions → Variables):
 
 | Target | `SITE_URL` | `SITE_BASE` |
 |---|---|---|
-| Preview (default) | `https://isomlab.github.io` | `/isomlab-website` |
+| Preview (default) | `https://dangerisom.github.io` | `/isomlab-website` |
 | Live on isomlab.com | `https://www.isomlab.com` | `/` |
 
 ### Cutting over to isomlab.com
@@ -132,7 +132,7 @@ Actions → Variables):
 2. Add `www.isomlab.com` under Settings → Pages → Custom domain. That commits a
    `CNAME` file to the repo.
 3. At **GoDaddy**, point DNS at GitHub Pages:
-   - `CNAME` record, host `www` → `isomlab.github.io`
+   - `CNAME` record, host `www` → `dangerisom.github.io`
    - four `A` records on the apex `@` → `185.199.108.153`, `185.199.109.153`,
      `185.199.110.153`, `185.199.111.153`
 4. Wait for DNS to propagate, then tick **Enforce HTTPS** in Settings → Pages.
