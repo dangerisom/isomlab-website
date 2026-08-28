@@ -87,7 +87,8 @@ export const people = [
     program: '',
     role: 'member',
     photo: 'robin.jpg',
-    blurb: '', // TODO: bio -- no copy for this one existed on the Wix page
+    blurb:
+      'I was born and raised in Myanmar, where Burmese pythons were occasionally part of the neighborhood scenery and milk tea at the nearest tea shop was a regular part of life. I came to the Isom Lab with two things I carry everywhere: a background in chemistry and a lot of questions. I graduated from the University of Miami with a B.S. in Chemistry, and my curiosity about how and why things work continues to drive my interest in science. Currently, I am studying compartment-specific pH regulation in glioblastoma (GBM) cells and exploring how these intracellular environments differ from normal cells. Outside the lab, I enjoy trying new restaurants, bar hopping, shopping, and traveling.',
   },
 ];
 
