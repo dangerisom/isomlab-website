@@ -83,7 +83,7 @@ export const people = [
   {
     slug: 'robin-pyait',
     name: 'Robin Pyait',
-    title: 'Graduate Student (Masters)',
+    title: 'Masters Student',
     program: '',
     role: 'member',
     photo: 'robin.jpg',
