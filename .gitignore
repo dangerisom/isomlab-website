@@ -7,3 +7,8 @@ dist/
 
 # Obsidian workspace files -- editor state, not site content
 .obsidian/
+
+# build artifacts, not source
+isomlab-website-preview.zip
+__pycache__/
+*.pyc
