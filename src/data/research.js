@@ -11,7 +11,7 @@ export const areas = [
       "We study this process from the residue upward through electroinformatics — mapping charge networks and titratable surfaces across predicted and experimental protein structures to discover where proton binding can change what a protein does. Any protein with the right network of charged residues is a potential pH sensor. G protein-coupled receptors have provided an important proving ground for this idea, but they represent one example of a much broader principle: protons can act as biological signals.",
       "At the scale of the whole cell, we ask how cells sense, regulate, and ultimately adapt to acidity. This ability becomes particularly important in cancer, where cells must survive and function within an acidic tumor microenvironment. Using genetically encoded pH biosensors, we can follow these adaptations in living cells and investigate the molecular mechanisms that allow cancer cells to thrive under conditions that challenge normal cells.",
     ],
-    keywords: ['proton sensing', 'electroinformatics', 'pH-dependent function', 'GPCR signaling', 'tumor microenvironment', 'pH biosensors'],
+    keywords: ["proton sensing", "electroinformatics", "tumor acidity", "acid adaptivity"],
   },
   {
     id: 'dark-proteome',
@@ -23,7 +23,7 @@ export const areas = [
       "Our lab develops new ways to bring this hidden biology into view. We are particularly interested in the most elusive proteins, which we call “superdark” proteins. Their amino acid sequences can look almost nothing like proteins we already understand, allowing them to escape conventional methods of discovery even when their three-dimensional structures reveal remarkable similarities to well-known protein families.",
       "Artificial intelligence is changing what is possible. By combining AI-based protein structure prediction, large-scale computation, and experiments in living cells, we can systematically search the dark proteome, uncover what these proteins do, and determine whether they reveal previously unknown mechanisms of cancer and other diseases.",
     ],
-    keywords: ['dark proteome', 'superdark proteins', 'structure prediction', 'AlphaFold'],
+    keywords: ["superdark proteins", "dark cancer targets", "high-risk high reward", "therapeutic potential"],
   },
   {
     id: 'intercellular-exchange',
@@ -35,7 +35,7 @@ export const areas = [
       'Whichever route the cargo takes, the exchange can cut both ways. The same machinery that lets cells cooperate, pooling resources and buffering one another against stress, could equally let them compete, with one cell drawing cargo from a neighbor at that neighbor\'s expense. Which behavior dominates, and what decides it, is an open question we are actively pursuing.',
       'These proteins are more active in certain cancers, which suggests tumors may exploit them to sustain growth or resist stress. The finding has opened a new direction for the lab and sharpened our picture of how cells communicate in both healthy and diseased tissue.',
     ],
-    keywords: ['intercellular communication', 'extracellular vesicles', 'exosomes', 'tunneling nanotubes', 'organelle exchange', 'cryo-CLEM'],
+    keywords: ["intercellular communication", "intercellular cooperation", "intercellular competition", "intercellular exploitation"],
   },
 ];
 
