@@ -2,20 +2,8 @@
 // Each area gets its own section on /research and a card on the homepage.
 export const areas = [
   {
-    id: 'ph-sensing',
-    number: '01',
-    title: 'How cells sense and adapt to tumor acidity',
-    lede: "Proton binding as a signal and regulator — from individual proteins to cells and tumors.",
-    body: [
-      "Acidity is information. pH varies across tissues and within the compartments of every cell. Tumors, inflamed tissues, endosomes, and other acidic environments expose proteins to very different concentrations of protons. Proteins can read these differences through networks of charged amino acids whose ionization changes with their surroundings, allowing changes in acidity to alter protein structure and function.",
-      "We study this process from the residue upward through electroinformatics — mapping charge networks and titratable surfaces across predicted and experimental protein structures to discover where proton binding can change what a protein does. Any protein with the right network of charged residues is a potential pH sensor. G protein-coupled receptors have provided an important proving ground for this idea, but they represent one example of a much broader principle: protons can act as biological signals.",
-      "At the scale of the whole cell, we ask how cells sense, regulate, and ultimately adapt to acidity. This ability becomes particularly important in cancer, where cells must survive and function within an acidic tumor microenvironment. Using genetically encoded pH biosensors, we can follow these adaptations in living cells and investigate the molecular mechanisms that allow cancer cells to thrive under conditions that challenge normal cells.",
-    ],
-    keywords: ["proton sensing", "electroinformatics", "tumor acidity", "acid adaptivity"],
-  },
-  {
     id: 'dark-proteome',
-    number: '02',
+    number: '01',
     title: 'The hidden world of dark proteins',
     lede: "Some of the next important targets in cancer may be proteins we barely understand.",
     body: [
@@ -27,7 +15,7 @@ export const areas = [
   },
   {
     id: 'intercellular-exchange',
-    number: '03',
+    number: '02',
     title: "How cells connect, cooperate, and compete",
     lede: "Cells share resources. Cancer cells may exploit these hidden networks to survive.",
     body: [
@@ -38,6 +26,19 @@ export const areas = [
     ],
     keywords: ["intercellular communication", "intercellular cooperation", "intercellular competition", "intercellular exploitation"],
   },
+  {
+    id: 'ph-sensing',
+    number: '03',
+    title: 'How cells sense and adapt to tumor acidity',
+    lede: "Proton binding as a signal and regulator — from individual proteins to cells and tumors.",
+    body: [
+      "Acidity is information. pH varies across tissues and within the compartments of every cell. Tumors, inflamed tissues, endosomes, and other acidic environments expose proteins to very different concentrations of protons. Proteins can read these differences through networks of charged amino acids whose ionization changes with their surroundings, allowing changes in acidity to alter protein structure and function.",
+      "We study this process from the residue upward through electroinformatics — mapping charge networks and titratable surfaces across predicted and experimental protein structures to discover where proton binding can change what a protein does. Any protein with the right network of charged residues is a potential pH sensor. G protein-coupled receptors have provided an important proving ground for this idea, but they represent one example of a much broader principle: protons can act as biological signals.",
+      "At the scale of the whole cell, we ask how cells sense, regulate, and ultimately adapt to acidity. This ability becomes particularly important in cancer, where cells must survive and function within an acidic tumor microenvironment. Using genetically encoded pH biosensors, we can follow these adaptations in living cells and investigate the molecular mechanisms that allow cancer cells to thrive under conditions that challenge normal cells.",
+    ],
+    keywords: ["proton sensing", "electroinformatics", "tumor acidity", "acid adaptivity"],
+  },
+
 ];
 
 export const approaches = [
