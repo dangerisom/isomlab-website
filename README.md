@@ -128,15 +128,9 @@ Actions → Variables):
 
 ### Cutting over to isomlab.com
 
-1. Set the two variables above to the live values; push to rebuild.
-2. Add `www.isomlab.com` under Settings → Pages → Custom domain. That commits a
-   `CNAME` file to the repo.
-3. At **GoDaddy**, point DNS at GitHub Pages:
-   - `CNAME` record, host `www` → `dangerisom.github.io`
-   - four `A` records on the apex `@` → `185.199.108.153`, `185.199.109.153`,
-     `185.199.110.153`, `185.199.111.153`
-4. Wait for DNS to propagate, then tick **Enforce HTTPS** in Settings → Pages.
-5. Cancel the Wix plan only after the new site has served correctly for a few days.
+**See [CUTOVER.md](CUTOVER.md).** The procedure that used to live here was wrong:
+it said to change DNS at GoDaddy, but GoDaddy is only the registrar. DNS is served
+by Wix's nameservers, so records edited at GoDaddy would have had no effect.
 
-Keep the Wix site until then — it costs one more billing cycle and it is the
-rollback path.
+CUTOVER.md also records the live email records, which the old instructions did not
+mention at all and which would have been dropped.
