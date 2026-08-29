@@ -10,7 +10,7 @@ export const software = [
     blurb:
       'Design CRISPR/Cas9 guide RNAs and chimera-insertion primers across an entire ORF, with synonymous PAM silencing and BLAST+ off-target screening.',
     tags: ['CRISPR', 'guide design', 'yeast'],
-    conda: 'under review',
+    conda: 'bioconda',
   },
   {
     name: 'bioleads',
