@@ -41,7 +41,7 @@ export const people = [
   },
   {
     slug: 'bruno-colon',
-    name: 'Bruno Colon',
+    name: 'Bruno Colon, MS',
     title: 'Graduate Student',
     program: 'Molecular and Cellular Pharmacology Program',
     role: 'member',
