@@ -32,8 +32,8 @@ The source of truth is unchanged: ORCID → `cv/build/update_publications.py` �
 `publications.json`. This site reads that file and reshapes it.
 
 ```bash
-cd ~/Documents/Claude/Projects/cv/build && python3 update_publications.py
-cd ~/Documents/Claude/Projects/repos/isomlab-website && npm run build
+cd ~/Documents/Claude/Projects/cv_repo/build && python3 update_publications.py
+cd ~/Documents/Claude/Projects/code_repos/isomlab-website && npm run build
 ```
 
 Never hand-edit `src/data/publications.json` — it is overwritten on every build.

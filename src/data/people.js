@@ -94,7 +94,7 @@ export const people = [
 
 /**
  * Former lab members, generated from `formerLab` in the CV project's cv_data.js
- * (~/Documents/Claude/Projects/cv/build/cv_data.js), which is the authoritative
+ * (~/Documents/Claude/Projects/cv_repo/build/cv_data.js), which is the authoritative
  * list. `now` is blank until filled in and is simply omitted when empty.
  */
 export const alumni = [
