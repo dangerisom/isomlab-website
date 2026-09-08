@@ -5,7 +5,7 @@
  * This script only reshapes that file; it never edits it. To refresh the site after a
  * paper lands, run the CV pipeline first, then `npm run build`:
  *
- *   cd ~/Documents/Claude/Projects/cv/build && python3 update_publications.py
+ *   cd ~/Documents/Claude/Projects/cv_repo/build && python3 update_publications.py
  *   cd ~/Documents/Claude/Projects/repos/isomlab-website && npm run build
  */
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
@@ -17,7 +17,7 @@ const root = resolve(__dirname, '..');
 
 const SOURCE =
   process.env.PUBLICATIONS_JSON ??
-  resolve(root, '../../cv/build/publications.json');
+  resolve(root, '../../cv_repo/build/publications.json');
 const OUT = join(root, 'src/data/publications.json');
 
 // Papers under press embargo. Listed here by title substring, they are carried

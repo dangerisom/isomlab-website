@@ -42,7 +42,8 @@ const members = people.filter((p) => p.role !== 'pi');
           <ul class="links">
             {pi.orcid && <li><a href={`https://orcid.org/${pi.orcid}`} rel="noopener">ORCID</a></li>}
             {pi.links?.github && <li><a href={pi.links.github} rel="noopener">GitHub</a></li>}
-            {pi.links?.twitter && <li><a href={pi.links.twitter} rel="noopener">X / Twitter</a></li>}
+            {pi.links?.twitter && <li><a href={pi.links.twitter} rel="noopener">X</a></li>}
+            {pi.links?.linkedin && <li><a href={pi.links.linkedin} rel="noopener">LinkedIn</a></li>}
           </ul>
         </div>
       </div>

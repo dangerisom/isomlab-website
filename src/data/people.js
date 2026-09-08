@@ -28,6 +28,7 @@ export const people = [
     links: {
       github: 'https://github.com/dangerisom',
       twitter: 'https://twitter.com/danIsomLab',
+      linkedin: 'https://www.linkedin.com/in/daniel-g-isom/',
     },
   },
   {

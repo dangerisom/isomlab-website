@@ -1,61 +1,11 @@
 {
   "orcid": "0000-0001-5637-2370",
-  "synced": "2026-08-10 03:01 UTC",
+  "synced": "2026-09-05 19:19 UTC",
   "counts": {
     "total": 36,
     "withheld": 1
   },
   "items": [
-    {
-      "title": "Protocol for CRISPR genome editing in S. cerevisiae using PCR-based guide insertion",
-      "authors": [
-        {
-          "name": "Rostamian H",
-          "isLab": false
-        },
-        {
-          "name": "Madden EW",
-          "isLab": false
-        },
-        {
-          "name": "Kaplan FM",
-          "isLab": false
-        },
-        {
-          "name": "Kim RS",
-          "isLab": false
-        },
-        {
-          "name": "Isom DG",
-          "isLab": true
-        },
-        {
-          "name": "Strahl BD",
-          "isLab": false
-        }
-      ],
-      "venue": "STAR Protoc",
-      "year": "2026",
-      "detail": "7(3):104751",
-      "kind": "article",
-      "preprint": false,
-      "inPress": false,
-      "links": [
-        {
-          "label": "DOI",
-          "href": "https://doi.org/10.1016/j.xpro.2026.104751"
-        },
-        {
-          "label": "PubMed",
-          "href": "https://pubmed.ncbi.nlm.nih.gov/42519825/"
-        },
-        {
-          "label": "PMC",
-          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13449778/"
-        }
-      ],
-      "embargoed": false
-    },
     {
       "title": "Lactate-Activated GPR132 Signaling Drives a Tumor Microenvironmental Autocrine Metabolic Loop in Kidney Cancer",
       "authors": [
@@ -146,7 +96,7 @@
       ],
       "venue": "Cancer Res",
       "year": "2026",
-      "detail": "",
+      "detail": "86(17):4255-4272",
       "kind": "article",
       "preprint": false,
       "inPress": false,
@@ -158,6 +108,56 @@
         {
           "label": "PubMed",
           "href": "https://pubmed.ncbi.nlm.nih.gov/42258526/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
+      "title": "Protocol for CRISPR genome editing in S. cerevisiae using PCR-based guide insertion",
+      "authors": [
+        {
+          "name": "Rostamian H",
+          "isLab": false
+        },
+        {
+          "name": "Madden EW",
+          "isLab": false
+        },
+        {
+          "name": "Kaplan FM",
+          "isLab": false
+        },
+        {
+          "name": "Kim RS",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Strahl BD",
+          "isLab": false
+        }
+      ],
+      "venue": "STAR Protoc",
+      "year": "2026",
+      "detail": "7(3):104751",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1016/j.xpro.2026.104751"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/42519825/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13449778/"
         }
       ],
       "embargoed": false
@@ -364,7 +364,12 @@
       "kind": "accepted",
       "preprint": false,
       "inPress": true,
-      "links": [],
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1038/s41586-026-10993-8"
+        }
+      ],
       "embargoed": true
     },
     {
