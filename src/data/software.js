@@ -87,3 +87,21 @@ export const guides = [
     blurb: 'Downloading, launching, updating, and troubleshooting any of the tools.',
   },
 ];
+
+/**
+ * Legacy: code that predates the released tools above and is kept as it was
+ * published, with its own explanatory pages rather than a packaged install.
+ * Deliberately last on the page.
+ */
+export const legacy = [
+  {
+    title: 'superdarks',
+    href: 'https://dangerisom.github.io/Isom-Lab/github_website/projects/superdarks/',
+    blurb:
+      'The structural-homology pipeline behind the TM184C paper: a TM-align sweep of a query structure against the AlphaFold Database on up to 1,000 compute nodes, then four stages of hit filtering, enrichment and networking. Presented as annotated, downloadable scripts with a page per stage.',
+    links: [
+      { label: 'Code on Zenodo (MIT)', href: 'https://doi.org/10.5281/zenodo.21175708' },
+      { label: 'Datasets S1–S4 on Zenodo (CC BY 4.0)', href: 'https://doi.org/10.5281/zenodo.21178101' },
+    ],
+  },
+];

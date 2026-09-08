@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { software, guides } from '../data/software.js';
+import { software, guides, legacy } from '../data/software.js';
 
 const tools = software.filter((s) => !s.isCore);
 const core = software.filter((s) => s.isCore);
@@ -60,6 +60,23 @@ const core = software.filter((s) => s.isCore);
       ))}
     </div>
   </section>
+
+  <section class="section legacy">
+    <div class="wrap">
+      <p class="eyebrow">Legacy</p>
+      <h2>Earlier code, kept as published</h2>
+      {legacy.map((l) => (
+        <div class="core">
+          <h3><a href={l.href} rel="noopener">{l.title}</a></h3>
+          <p>{l.blurb}</p>
+          <p class="links">
+            <a href={l.href} rel="noopener">Browse the code and notes</a>
+            {l.links.map((x) => (<a href={x.href} rel="noopener">{x.label}</a>))}
+          </p>
+        </div>
+      ))}
+    </div>
+  </section>
 </Base>
 
 <style>
@@ -105,4 +122,8 @@ const core = software.filter((s) => s.isCore);
   .core p { color: var(--ink-muted); max-width: 68ch; }
   .core a { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-faint); text-decoration: none; }
   .core a:hover { color: var(--accent); }
+  .legacy .core { margin-top: 1.8rem; }
+  .legacy .core h3 a { text-decoration: none; }
+  .legacy .core h3 a:hover { color: var(--accent-ink); }
+  .legacy .links { display: flex; gap: 1.2rem; flex-wrap: wrap; margin-top: 0.8rem; }
 </style>
