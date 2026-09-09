@@ -31,6 +31,14 @@ const EMBARGOED = (process.env.EMBARGOED_TITLES ?? '')
 
 const LAB_AUTHOR = /^Isom\s+D/;
 
+// Links a paper earns beyond its own identifiers, keyed by DOI: a commentary,
+// a News & Views, a press piece. Rendered after the DOI/PubMed/PMC links.
+const EXTRA_LINKS = {
+  '10.1038/s41586-026-10993-8': [
+    { label: 'News & Views', href: 'https://doi.org/10.1038/d41586-026-02472-x' },
+  ],
+};
+
 function formatAuthors(authors = []) {
   return authors.map((name) => ({ name, isLab: LAB_AUTHOR.test(name) }));
 }
@@ -70,6 +78,7 @@ function links(rec) {
       label: 'PMC',
       href: `https://www.ncbi.nlm.nih.gov/pmc/articles/${rec.pmcid}/`,
     });
+  out.push(...(EXTRA_LINKS[rec.doi] ?? []));
   return out;
 }
 

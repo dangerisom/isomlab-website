@@ -108,6 +108,10 @@
         {
           "label": "DOI",
           "href": "https://doi.org/10.1038/s41586-026-10993-8"
+        },
+        {
+          "label": "News & Views",
+          "href": "https://doi.org/10.1038/d41586-026-02472-x"
         }
       ],
       "embargoed": false
