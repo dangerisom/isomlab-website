@@ -1,9 +1,9 @@
 {
   "orcid": "0000-0001-5637-2370",
-  "synced": "2026-09-05 19:19 UTC",
+  "synced": "2026-09-09 19:25 UTC",
   "counts": {
-    "total": 36,
-    "withheld": 1
+    "total": 37,
+    "withheld": 0
   },
   "items": [
     {
@@ -270,7 +270,7 @@
       "title": "TM184C is a GPCR-like regulator of intercellular exchange and autophagy",
       "authors": [
         {
-          "name": "Lee K",
+          "name": "Lee KD",
           "isLab": false
         },
         {
@@ -306,7 +306,7 @@
           "isLab": false
         },
         {
-          "name": "Thompson-Ceccato S",
+          "name": "Thompson-Ceccato SJ",
           "isLab": false
         },
         {
@@ -330,7 +330,7 @@
           "isLab": false
         },
         {
-          "name": "Welford S",
+          "name": "Welford SM",
           "isLab": false
         },
         {
@@ -342,7 +342,7 @@
           "isLab": false
         },
         {
-          "name": "Goldberg B",
+          "name": "Goldberg BO",
           "isLab": false
         },
         {
@@ -361,16 +361,16 @@
       "venue": "Nature",
       "year": "2026",
       "detail": "",
-      "kind": "accepted",
+      "kind": "article",
       "preprint": false,
-      "inPress": true,
+      "inPress": false,
       "links": [
         {
           "label": "DOI",
           "href": "https://doi.org/10.1038/s41586-026-10993-8"
         }
       ],
-      "embargoed": true
+      "embargoed": false
     },
     {
       "title": "Systematic mapping of chimera-permissive sites by CRISPR-guided PAM scanning",

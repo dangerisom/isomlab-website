@@ -23,7 +23,8 @@ const OUT = join(root, 'src/data/publications.json');
 // Papers under press embargo. Listed here by title substring, they are carried
 // through the build but flagged `embargoed` and withheld from the rendered page.
 // Delete the entry the day the paper goes live -- nothing else needs to change.
-const EMBARGOED = (process.env.EMBARGOED_TITLES ?? 'TM184C is a GPCR-like regulator')
+// (The TM184C Nature paper sat here from 2026-08 until it published on 2026-09-09.)
+const EMBARGOED = (process.env.EMBARGOED_TITLES ?? '')
   .split('|')
   .map((s) => s.trim())
   .filter(Boolean);
