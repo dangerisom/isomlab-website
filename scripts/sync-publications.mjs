@@ -84,10 +84,30 @@ if (!existsSync(SOURCE)) {
 const db = JSON.parse(readFileSync(SOURCE, 'utf8'));
 const records = db.records ?? [];
 
+const MONTHS = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12 };
+
+// A sortable YYYYMMDD from whatever date the record carries: the issue's
+// month/day first, else the online (epub) date "2026 Sep 9", else the year alone.
+// Newest first within a year, so today's paper leads the list without a pin.
+function sortDate(rec) {
+  const year = Number(rec.year) || 0;
+  let month = MONTHS[String(rec.month ?? '').slice(0, 3).toLowerCase()] ?? 0;
+  let day = Number(rec.day) || 0;
+  if (!month && rec.epub) {
+    const m = String(rec.epub).match(/^(\d{4})\s+([A-Za-z]{3})\w*\s*(\d{1,2})?/);
+    if (m && Number(m[1]) === year) {
+      month = MONTHS[m[2].toLowerCase()] ?? 0;
+      day = Number(m[3]) || 0;
+    }
+  }
+  return year * 10000 + month * 100 + day;
+}
+
 const items = records
   .map((rec) => {
     const embargoed = EMBARGOED.some((frag) => (rec.title ?? '').includes(frag));
     return {
+      sortDate: sortDate(rec),
       title: (rec.title ?? '').replace(/\s+/g, ' ').trim(),
       authors: formatAuthors(rec.authors),
       venue: venue(rec),
@@ -102,12 +122,15 @@ const items = records
   })
   // Newest year first. Within a year: published work, then accepted/in-press,
   // then preprints -- so the peer-reviewed record leads and unreviewed work
-  // does not sit above it. Sort is stable, so ORCID's order breaks ties.
+  // does not sit above it. Within each of those, newest date first; sort is
+  // stable, so ORCID's order breaks any remaining ties.
   .sort((a, b) => {
     if (a.year !== b.year) return Number(b.year) - Number(a.year);
     const rank = (p) => (p.preprint ? 2 : p.inPress ? 1 : 0);
-    return rank(a) - rank(b);
-  });
+    if (rank(a) !== rank(b)) return rank(a) - rank(b);
+    return b.sortDate - a.sortDate;
+  })
+  .map(({ sortDate, ...p }) => p);
 
 const visible = items.filter((p) => !p.embargoed);
 const payload = {

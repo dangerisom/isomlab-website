@@ -7,6 +7,112 @@
   },
   "items": [
     {
+      "title": "TM184C is a GPCR-like regulator of intercellular exchange and autophagy",
+      "authors": [
+        {
+          "name": "Lee KD",
+          "isLab": false
+        },
+        {
+          "name": "Taylor S",
+          "isLab": false
+        },
+        {
+          "name": "Arcuri J",
+          "isLab": false
+        },
+        {
+          "name": "Chandthakuri S",
+          "isLab": false
+        },
+        {
+          "name": "Pujols J",
+          "isLab": false
+        },
+        {
+          "name": "Colon B",
+          "isLab": false
+        },
+        {
+          "name": "Wang Q",
+          "isLab": false
+        },
+        {
+          "name": "Wu C",
+          "isLab": false
+        },
+        {
+          "name": "Meng Z",
+          "isLab": false
+        },
+        {
+          "name": "Thompson-Ceccato SJ",
+          "isLab": false
+        },
+        {
+          "name": "Mitchell J",
+          "isLab": false
+        },
+        {
+          "name": "Bayik D",
+          "isLab": false
+        },
+        {
+          "name": "Carbone A",
+          "isLab": false
+        },
+        {
+          "name": "Slepak V",
+          "isLab": false
+        },
+        {
+          "name": "Slepak TI",
+          "isLab": false
+        },
+        {
+          "name": "Welford SM",
+          "isLab": false
+        },
+        {
+          "name": "Ivan ME",
+          "isLab": false
+        },
+        {
+          "name": "Wang D",
+          "isLab": false
+        },
+        {
+          "name": "Goldberg BO",
+          "isLab": false
+        },
+        {
+          "name": "Baringer W",
+          "isLab": false
+        },
+        {
+          "name": "Maradzike E",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        }
+      ],
+      "venue": "Nature",
+      "year": "2026",
+      "detail": "",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.1038/s41586-026-10993-8"
+        }
+      ],
+      "embargoed": false
+    },
+    {
       "title": "Lactate-Activated GPR132 Signaling Drives a Tumor Microenvironmental Autocrine Metabolic Loop in Kidney Cancer",
       "authors": [
         {
@@ -262,112 +368,6 @@
         {
           "label": "PMC",
           "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12796099/"
-        }
-      ],
-      "embargoed": false
-    },
-    {
-      "title": "TM184C is a GPCR-like regulator of intercellular exchange and autophagy",
-      "authors": [
-        {
-          "name": "Lee KD",
-          "isLab": false
-        },
-        {
-          "name": "Taylor S",
-          "isLab": false
-        },
-        {
-          "name": "Arcuri J",
-          "isLab": false
-        },
-        {
-          "name": "Chandthakuri S",
-          "isLab": false
-        },
-        {
-          "name": "Pujols J",
-          "isLab": false
-        },
-        {
-          "name": "Colon B",
-          "isLab": false
-        },
-        {
-          "name": "Wang Q",
-          "isLab": false
-        },
-        {
-          "name": "Wu C",
-          "isLab": false
-        },
-        {
-          "name": "Meng Z",
-          "isLab": false
-        },
-        {
-          "name": "Thompson-Ceccato SJ",
-          "isLab": false
-        },
-        {
-          "name": "Mitchell J",
-          "isLab": false
-        },
-        {
-          "name": "Bayik D",
-          "isLab": false
-        },
-        {
-          "name": "Carbone A",
-          "isLab": false
-        },
-        {
-          "name": "Slepak V",
-          "isLab": false
-        },
-        {
-          "name": "Slepak TI",
-          "isLab": false
-        },
-        {
-          "name": "Welford SM",
-          "isLab": false
-        },
-        {
-          "name": "Ivan ME",
-          "isLab": false
-        },
-        {
-          "name": "Wang D",
-          "isLab": false
-        },
-        {
-          "name": "Goldberg BO",
-          "isLab": false
-        },
-        {
-          "name": "Baringer W",
-          "isLab": false
-        },
-        {
-          "name": "Maradzike E",
-          "isLab": false
-        },
-        {
-          "name": "Isom DG",
-          "isLab": true
-        }
-      ],
-      "venue": "Nature",
-      "year": "2026",
-      "detail": "",
-      "kind": "article",
-      "preprint": false,
-      "inPress": false,
-      "links": [
-        {
-          "label": "DOI",
-          "href": "https://doi.org/10.1038/s41586-026-10993-8"
         }
       ],
       "embargoed": false
@@ -851,6 +851,80 @@
       "embargoed": false
     },
     {
+      "title": "Regulation of Mitochondrial Respiratory Chain Complex Levels, Organization, and Function by Arginyltransferase 1",
+      "authors": [
+        {
+          "name": "Jiang C",
+          "isLab": false
+        },
+        {
+          "name": "Moorthy BT",
+          "isLab": false
+        },
+        {
+          "name": "Patel DM",
+          "isLab": false
+        },
+        {
+          "name": "Kumar A",
+          "isLab": false
+        },
+        {
+          "name": "Morgan WM",
+          "isLab": false
+        },
+        {
+          "name": "Alfonso B",
+          "isLab": false
+        },
+        {
+          "name": "Huang J",
+          "isLab": false
+        },
+        {
+          "name": "Lampidis TJ",
+          "isLab": false
+        },
+        {
+          "name": "Isom DG",
+          "isLab": true
+        },
+        {
+          "name": "Barrientos A",
+          "isLab": false
+        },
+        {
+          "name": "Fontanesi F",
+          "isLab": false
+        },
+        {
+          "name": "Zhang F",
+          "isLab": false
+        }
+      ],
+      "venue": "Front Cell Dev Biol",
+      "year": "2020",
+      "detail": "8:603688",
+      "kind": "article",
+      "preprint": false,
+      "inPress": false,
+      "links": [
+        {
+          "label": "DOI",
+          "href": "https://doi.org/10.3389/fcell.2020.603688"
+        },
+        {
+          "label": "PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/33409279/"
+        },
+        {
+          "label": "PMC",
+          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779560/"
+        }
+      ],
+      "embargoed": false
+    },
+    {
       "title": "HCAR3: an underexplored metabolite sensor",
       "authors": [
         {
@@ -1050,80 +1124,6 @@
         {
           "label": "PMC",
           "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7293659/"
-        }
-      ],
-      "embargoed": false
-    },
-    {
-      "title": "Regulation of Mitochondrial Respiratory Chain Complex Levels, Organization, and Function by Arginyltransferase 1",
-      "authors": [
-        {
-          "name": "Jiang C",
-          "isLab": false
-        },
-        {
-          "name": "Moorthy BT",
-          "isLab": false
-        },
-        {
-          "name": "Patel DM",
-          "isLab": false
-        },
-        {
-          "name": "Kumar A",
-          "isLab": false
-        },
-        {
-          "name": "Morgan WM",
-          "isLab": false
-        },
-        {
-          "name": "Alfonso B",
-          "isLab": false
-        },
-        {
-          "name": "Huang J",
-          "isLab": false
-        },
-        {
-          "name": "Lampidis TJ",
-          "isLab": false
-        },
-        {
-          "name": "Isom DG",
-          "isLab": true
-        },
-        {
-          "name": "Barrientos A",
-          "isLab": false
-        },
-        {
-          "name": "Fontanesi F",
-          "isLab": false
-        },
-        {
-          "name": "Zhang F",
-          "isLab": false
-        }
-      ],
-      "venue": "Front Cell Dev Biol",
-      "year": "2020",
-      "detail": "8:603688",
-      "kind": "article",
-      "preprint": false,
-      "inPress": false,
-      "links": [
-        {
-          "label": "DOI",
-          "href": "https://doi.org/10.3389/fcell.2020.603688"
-        },
-        {
-          "label": "PubMed",
-          "href": "https://pubmed.ncbi.nlm.nih.gov/33409279/"
-        },
-        {
-          "label": "PMC",
-          "href": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7779560/"
         }
       ],
       "embargoed": false
