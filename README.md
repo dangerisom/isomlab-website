@@ -134,3 +134,12 @@ by Wix's nameservers, so records edited at GoDaddy would have had no effect.
 
 CUTOVER.md also records the live email records, which the old instructions did not
 mention at all and which would have been dropped.
+
+## Cache behavior and search visibility
+
+Two operational notes live alongside `CLOUDFLARE_TLS.md`:
+
+- `CLOUDFLARE_CACHE.md` explains why a nav change looks half applied for ten
+  minutes after a deploy, and the two Cloudflare cache rules that fix it.
+- `SEARCH_VISIBILITY.md` is the worklist for making isomlab.com rank for Dan's
+  own name, with what has already been changed and what is left.
