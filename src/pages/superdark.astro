@@ -1,0 +1,334 @@
+---
+import Base from '../layouts/Base.astro';
+import { url } from '../utils/url.js';
+
+const paper = {
+  title: 'TM184C is a GPCR-like regulator of intercellular exchange and autophagy',
+  venue: 'Nature',
+  year: 2026,
+  doi: 'https://doi.org/10.1038/s41586-026-10993-8',
+  news: 'https://doi.org/10.1038/d41586-026-02472-x',
+};
+
+// Every name TM184C is filed under. Anyone arriving from a gene database or a
+// vendor catalogue is searching one of these, not the name we use in the paper.
+const aliases = ['TMEM184C', 'TM184C', 'TMEM34', 'PRO1355', 'FLJ10846', 'T184C'];
+
+const records = [
+  { label: 'UniProt', id: 'Q9NVA4', href: 'https://www.uniprot.org/uniprotkb/Q9NVA4/entry' },
+  { label: 'NCBI Gene', id: '55751', href: 'https://www.ncbi.nlm.nih.gov/gene/55751' },
+  { label: 'Ensembl', id: 'ENSG00000164168', href: 'https://www.proteinatlas.org/ENSG00000164168-TMEM184C' },
+  { label: 'OMIM', id: '613937', href: 'https://omim.org/entry/613937' },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'DefinedTerm',
+      '@id': 'https://www.isomlab.com/superdark#superdark',
+      name: 'Superdark protein',
+      description:
+        'A protein whose amino acid sequence is so different from any studied protein that sequence comparison reveals nothing about its identity or function, but whose predicted three-dimensional fold matches a known protein family.',
+      inDefinedTermSet: { '@type': 'DefinedTermSet', name: 'Dark proteome' },
+    },
+    {
+      '@type': 'ScholarlyArticle',
+      headline: paper.title,
+      datePublished: '2026-09-09',
+      isPartOf: { '@type': 'Periodical', name: paper.venue },
+      sameAs: paper.doi,
+      author: {
+        '@type': 'Person',
+        name: 'Daniel G. Isom',
+        sameAs: 'https://orcid.org/0000-0001-5637-2370',
+        affiliation: {
+          '@type': 'CollegeOrUniversity',
+          name: 'University of Miami Miller School of Medicine',
+        },
+      },
+      about: aliases.map((a) => ({ '@type': 'Thing', name: a })),
+    },
+  ],
+};
+---
+<Base
+  title="Superdark proteins and TM184C"
+  description="TM184C, also called TMEM184C, is a GPCR-like protein found by comparing predicted protein folds rather than sequences. It rides intracellular vesicles, builds connections between cells, and constrains autophagy."
+  jsonLd={jsonLd}
+>
+  <section class="intro">
+    <div class="wrap wrap-prose">
+      <p class="eyebrow">Dark proteome</p>
+      <h1>Superdark proteins, and TM184C</h1>
+      <p class="lede">
+        Some proteins hide from every method we normally use to identify them. TM184C,
+        filed in the gene databases as TMEM184C, was one of them until we went looking
+        by shape instead of by sequence.
+      </p>
+    </div>
+  </section>
+
+  <section class="section definition">
+    <div class="wrap wrap-prose">
+      <h2 id="what-is-a-superdark-protein">What is a superdark protein?</h2>
+      <blockquote class="define">
+        <p>
+          The shape of a protein is encoded by its amino acid sequence. Usually, similar
+          amino acid sequences produce similar protein shapes, known as folds, so scientists
+          have traditionally compared sequences to figure out what unknown proteins might do.
+          But sometimes proteins with completely different amino acid sequences can have
+          remarkably similar folds. We call these proteins &ldquo;superdark&rdquo; when their
+          sequences are so different from known proteins that sequence comparisons give us
+          essentially no clue about what they are or what they do. Up until recently, we
+          haven&rsquo;t had enough protein shape information to systematically find these
+          hidden relationships. AI changed that by allowing us to predict and compare protein
+          folds on a massive scale. That&rsquo;s how we found a potentially very important
+          human protein that had been hiding in plain sight in our bodies.
+        </p>
+        <footer>Daniel G. Isom</footer>
+      </blockquote>
+      <p class="prose">
+        The term is ours. &ldquo;Dark&rdquo; proteins are the ones nobody has characterized.
+        Superdark is the harder case inside that set, where the sequence is not merely
+        uninformative but actively misleading, because it carries no detectable resemblance
+        to the family the protein actually belongs to.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap-prose prose">
+      <h2 id="what-is-tm184c">What is TM184C?</h2>
+      <p>
+        TM184C is a human seven-transmembrane protein. Its official gene symbol is
+        <strong>TMEM184C</strong>, it sits on chromosome 4q31.21, and it has been in the
+        genome databases for two decades with almost nothing attached to it beyond its
+        sequence. We call it TM184C for brevity, and the two names refer to the same protein.
+      </p>
+      <p>
+        Despite having no detectable sequence similarity to any G protein coupled receptor,
+        TM184C has the fold of one, and it behaves like one. It recruits
+        &beta;-arrestin and it is phosphorylated by GPCR kinases. What it does not do is sit
+        on the cell surface waiting for a ligand, which is where almost every GPCR is found.
+      </p>
+
+      <dl class="idcard">
+        <div>
+          <dt>Also known as</dt>
+          <dd>{aliases.join(', ')}</dd>
+        </div>
+        <div>
+          <dt>Family</dt>
+          <dd>TM184, alongside TM184A and TM184B. A second superdark family, PRRT, was identified in the same work.</dd>
+        </div>
+        <div>
+          <dt>Location in the cell</dt>
+          <dd>Highly dynamic intracellular vesicles, not the plasma membrane</dd>
+        </div>
+        <div>
+          <dt>Database records</dt>
+          <dd class="records">
+            {records.map((r) => (
+              <a href={r.href} rel="noopener">{r.label} {r.id}</a>
+            ))}
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section media">
+    <div class="wrap">
+      <figure>
+        <video
+          autoplay muted loop playsinline
+          poster={url('/media/intercellular-connection.jpg')}
+          aria-label="TM184C-positive vesicles moving inside a connection between two cells"
+        >
+          <source src={url('/media/intercellular-connection.webm')} type="video/webm" />
+          <source src={url('/media/intercellular-connection.mp4')} type="video/mp4" />
+        </video>
+        <figcaption>
+          A connection between two cells, with TM184C-marked vesicles inside it. Bridges like
+          this one carry organelles from one cell to another.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap-prose prose">
+      <h2 id="what-does-tm184c-do">What does TM184C do?</h2>
+      <p>
+        Four things, from the <cite>Nature</cite> paper. TM184C is the most broadly expressed
+        and most evolutionarily conserved of the superdark GPCR-like proteins, which is part
+        of why we focused on it.
+      </p>
+
+      <h3>It behaves like a GPCR in the wrong place</h3>
+      <p>
+        &beta;-arrestin recruitment and GPCR kinase dependent phosphorylation are hallmark
+        receptor activities, and TM184C has both. It carries them out on intracellular
+        vesicles rather than at the cell surface, which puts familiar receptor machinery to
+        work on a job nobody had assigned it.
+      </p>
+
+      <h3>It rides vesicles that travel on microtubules</h3>
+      <p>
+        The vesicles it marks are fast moving, they track along microtubules, and they
+        accumulate in the projections cells extend toward one another.
+      </p>
+
+      <h3>It promotes connections between cells, and those connections share organelles</h3>
+      <p>
+        Those projections go on to form structures resembling tunneling nanotubes and tumor
+        microtubes, and material crosses them. Organelles pass from one cell to another. The
+        process depends on the TM184C carboxyl terminal tail and on its arrestin code motif,
+        which is the link between the receptor-like regulation above and the cell biology
+        here.
+      </p>
+
+      <h3>It constrains autophagy, and has done so for a very long time</h3>
+      <p>
+        TM184C limits LC3B lipidation and holds down autophagosome accumulation. The role is
+        old enough to cross kingdoms: human TM184C restores autophagic body homeostasis in
+        yeast missing its counterpart, Hfl1. A human protein standing in for a yeast gene is
+        about as direct a statement of deep conservation as cell biology offers.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap-prose prose">
+      <h2 id="is-tm184c-a-gpcr">Is TM184C a GPCR?</h2>
+      <p>
+        It has the fold of one and performs two of the defining activities of one, so the
+        honest answer is that it is GPCR-like rather than a GPCR. It is not a surface
+        receptor for an extracellular signal, and we make no claim that it couples to a
+        heterotrimeric G protein. The useful reading is the other way round: the regulatory
+        machinery of receptors, &beta;-arrestin and the GRKs, turns out to operate inside the
+        cell on a protein nobody had connected to it.
+      </p>
+      <p>
+        This also explains why TM184C went unnoticed. Anyone running a sequence search for
+        new receptors would never have found it, because there is nothing in its sequence to
+        find.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap-prose prose">
+      <h2 id="how-we-found-it">How we found it</h2>
+      <p>
+        By comparing shapes instead of sequences, across more than 200 million predicted
+        structures from AlphaFold2. At that scale the question changes. Rather than asking
+        what a given protein resembles, you can ask which folds appear in the proteome
+        without any sequence family to account for them, and then look at what turns up.
+      </p>
+      <p>
+        Two human families came out of it, TM184 and PRRT, both with the seven-transmembrane
+        architecture of a GPCR and neither with the sequence to match. That is the method
+        worth taking away from this work, and it applies well beyond one protein. There is a
+        great deal of the proteome that sequence comparison cannot reach.
+      </p>
+    </div>
+  </section>
+
+  <section class="section paper">
+    <div class="wrap wrap-prose prose">
+      <h2 id="read-the-paper">Read the paper</h2>
+      <p class="cite">
+        Lee K, Taylor S, Arcuri J, Chandthakuri S, Pujols J, Colon B, Wang Q, Wu C, Meng Z,
+        Thompson-Ceccato S, Mitchell J, Bayik D, Carbone A, Slepak V, Slepak TI, Welford S,
+        Ivan ME, Wang D, Goldberg B, Baringer W, Maradzike E, Isom DG.
+        &ldquo;{paper.title}&rdquo; <cite>{paper.venue}</cite> ({paper.year}).
+      </p>
+      <p class="credit">
+        Kyutae Lee, Sam Taylor and Jennifer Arcuri contributed equally as co-first authors.
+      </p>
+      <p class="links">
+        <a href={paper.doi} rel="noopener">Read in Nature</a>
+        <a href={paper.news} rel="noopener">Nature News &amp; Views</a>
+      </p>
+      <p>
+        The work was supported by the National Institutes of Health, the Sylvester
+        Comprehensive Cancer Center, and the Pap Corps Champions for Cancer Research.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .intro { padding-block: clamp(3rem, 8vw, 5.5rem) clamp(1.5rem, 4vw, 2.5rem); }
+  .definition { background: var(--paper-sunk); }
+
+  /* The definition is the thing most readers came for, so it is set as a pull
+     quote rather than as another body paragraph. */
+  .define {
+    margin: 1.4rem 0 1.8rem;
+    padding-left: clamp(1rem, 3vw, 1.75rem);
+    border-left: 3px solid var(--accent);
+  }
+  .define p {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    line-height: 1.5;
+    color: var(--ink);
+    margin: 0;
+  }
+  .define footer {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+  }
+  .define footer { font-style: normal; }
+
+  .idcard {
+    margin: 2rem 0 0;
+    display: grid;
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .idcard > div {
+    background: var(--paper);
+    padding: 0.9rem 1.1rem;
+    display: grid;
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 1rem;
+  }
+  .idcard dt {
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+    color: var(--ink-faint);
+    text-transform: uppercase;
+  }
+  .idcard dd { margin: 0; font-size: 0.95rem; }
+  .records { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; }
+
+  .media figure { margin: 0; }
+  .media video {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    border-radius: 2px;
+    background: var(--paper-sunk);
+  }
+  .media figcaption {
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+    color: var(--ink-muted);
+    max-width: 60ch;
+  }
+
+  .paper { background: var(--paper-sunk); }
+  .cite { font-size: 0.92rem; color: var(--ink-muted); }
+  .credit { font-size: 0.92rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 0.4rem; }
+
+  @media (max-width: 720px) {
+    .idcard > div { grid-template-columns: 1fr; gap: 0.3rem; }
+  }
+</style>

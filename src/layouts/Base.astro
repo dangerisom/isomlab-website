@@ -10,6 +10,7 @@ const {
   description = site.description,
   ogImage = '/og-default.png',
   wide = false,
+  jsonLd = null,
 } = Astro.props;
 
 const pageTitle = title ? `${title} — ${site.name}` : `${site.name} — University of Miami`;
@@ -56,6 +57,10 @@ const ogUrl = new URL(url(ogImage), Astro.site ?? 'https://www.isomlab.com');
         member: { '@type': 'Person', name: site.pi.name, identifier: `https://orcid.org/${site.pi.orcid}` },
       })}
     />
+
+    {/* Page-specific structured data, for pages that describe one subject
+        (a protein, a paper) rather than the lab as a whole. */}
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

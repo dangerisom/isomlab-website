@@ -19,6 +19,7 @@ export const site = {
   },
   nav: [
     { label: 'Research', href: '/research' },
+    { label: 'Superdark', href: '/superdark' },
     { label: 'People', href: '/people' },
     { label: 'Publications', href: '/publications' },
     { label: 'Software', href: '/software' },
