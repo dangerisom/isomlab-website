@@ -1,0 +1,250 @@
+---
+import Base from '../../layouts/Base.astro';
+import { site } from '../../data/site.js';
+import { people } from '../../data/people.js';
+import { url } from '../../utils/url.js';
+
+const pi = people.find((p) => p.slug === 'daniel-isom');
+
+const honors = [
+  ['2024', 'Pap Corps Champions for Cancer Research Endowed Chair'],
+  ['2016', "Maximizing Investigator's Research Award, NIH NIGMS"],
+  ['2015', 'Early Career Development Award, UNC at Chapel Hill'],
+  ['2013', 'Stadtman Investigator Finalist, National Institutes of Health'],
+  ['2013', 'Joseph S. Pagano Award, UNC Lineberger Comprehensive Cancer Center'],
+  ['2012', 'James Moeser Award for Distinguished Research, UNC at Chapel Hill'],
+  ['2002', 'Carlson Graduate Fellowship in Molecular Biophysics, Johns Hopkins'],
+];
+
+const training = [
+  ['2010 to 2016', 'Postdoctoral fellow, University of North Carolina at Chapel Hill, with Henrik Dohlman'],
+  ['2007 to 2010', 'Postdoctoral fellow, Duke University, Department of Biochemistry'],
+  ['2000 to 2006', 'PhD in Molecular Biophysics, Johns Hopkins University'],
+  ['1996 to 2000', 'BA in Biochemistry and BA in Chemistry, Case Western Reserve University'],
+];
+
+// The identity anchors. Search engines use sameAs to decide that these
+// profiles and this page describe one person, which is the whole point of
+// having a page whose subject is a person rather than a lab.
+const profiles = [
+  { label: 'ORCID', href: `https://orcid.org/${pi.orcid}` },
+  { label: 'Google Scholar', href: site.social.scholar },
+  { label: 'GitHub', href: pi.links.github },
+  { label: 'LinkedIn', href: pi.links.linkedin },
+  { label: 'X', href: pi.links.twitter },
+];
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@type': 'Person',
+    name: 'Daniel G. Isom',
+    givenName: 'Daniel',
+    familyName: 'Isom',
+    honorificSuffix: 'PhD',
+    jobTitle: 'Associate Professor of Molecular and Cellular Pharmacology',
+    description:
+      'Biophysicist at the University of Miami Miller School of Medicine studying pH sensing by G protein coupled receptors, the dark proteome, and intercellular exchange.',
+    image: new URL(url(`/people/${pi.photo}`), 'https://www.isomlab.com').href,
+    url: 'https://www.isomlab.com/people/daniel-isom',
+    identifier: `https://orcid.org/${pi.orcid}`,
+    sameAs: profiles.map((p) => p.href).filter(Boolean),
+    affiliation: [
+      { '@type': 'CollegeOrUniversity', name: 'University of Miami Miller School of Medicine' },
+      { '@type': 'Organization', name: 'Sylvester Comprehensive Cancer Center' },
+      { '@type': 'Organization', name: 'Frost Institute for Data Science and Computing' },
+    ],
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'Johns Hopkins University' },
+      { '@type': 'CollegeOrUniversity', name: 'Case Western Reserve University' },
+    ],
+    knowsAbout: [
+      'G protein coupled receptors',
+      'pH sensing',
+      'the dark proteome',
+      'structural bioinformatics',
+      'cancer pharmacology',
+      'TM184C',
+      'TMEM184C',
+    ],
+    worksFor: { '@type': 'ResearchOrganization', name: 'Isom Lab', url: 'https://www.isomlab.com' },
+  },
+};
+---
+<Base
+  title="Daniel G. Isom"
+  description="Daniel G. Isom, PhD, is an associate professor of molecular and cellular pharmacology at the University of Miami Miller School of Medicine and holds the Pap Corps Champions for Cancer Research Endowed Chair. He studies pH sensing by GPCRs, the dark proteome, and intercellular exchange."
+  ogImage={`/people/${pi.photo}`}
+  jsonLd={jsonLd}
+>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="portrait">
+        <img
+          src={url(`/people/${pi.photo}`)}
+          alt="Portrait of Daniel G. Isom"
+          width="440" height="550" loading="eager"
+        />
+      </div>
+      <div class="hero-body">
+        <p class="eyebrow">Principal Investigator</p>
+        <h1>Daniel G. Isom, PhD</h1>
+        <ul class="appointments">
+          {pi.appointments.map((a) => <li>{a}</li>)}
+        </ul>
+        <p class="affil">University of Miami Miller School of Medicine</p>
+        <ul class="profiles">
+          {profiles.filter((p) => p.href).map((p) => (
+            <li><a href={p.href} rel="noopener me">{p.label}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap-prose prose">
+      <h2>What I work on</h2>
+      <p>
+        I am a biophysicist by training and my lab works on how cells read their
+        surroundings. Three questions run through most of what we do. How do G protein
+        coupled receptors sense pH, and what does that mean for cells living in the acidic
+        interior of a tumor. What is in the part of the human proteome that sequence
+        comparison cannot reach. And how do cells pass material directly to one another.
+      </p>
+      <p>
+        The third question came out of the second. In 2026 we reported
+        <a href={url('/superdark')}>TM184C</a>, a protein we found by comparing predicted
+        structures rather than sequences. It has the fold and some of the behavior of a GPCR
+        despite having no sequence resemblance to one, it rides fast moving vesicles inside
+        the cell, and it helps build the connections through which cells share organelles.
+        We call proteins like it superdark, because their sequences tell you nothing about
+        what they are.
+      </p>
+      <p>
+        Most of this work is half computational and half experimental, and the tools tend to
+        become their own projects. The lab releases what it builds, including pHinder for
+        finding ionizable networks buried in protein structures, and several packages for
+        receptor engineering and literature mining. There is more on the
+        <a href={url('/research')}>research</a> and <a href={url('/software')}>software</a>
+        pages.
+      </p>
+      <p>
+        I also teach. I built and run an introductory Python and data science course for
+        bioscientists that has now taken more than a hundred graduate students from no
+        coding to working code, and I teach across the MD, MD/MPH and PhD programs. Since
+        2024 I have served as Assistant Director for Education and Training at Sylvester.
+      </p>
+    </div>
+  </section>
+
+  <section class="section split">
+    <div class="wrap cols">
+      <div>
+        <h2>Training</h2>
+        <dl class="rows">
+          {training.map(([when, what]) => (
+            <div><dt>{when}</dt><dd>{what}</dd></div>
+          ))}
+        </dl>
+      </div>
+      <div>
+        <h2>Honors</h2>
+        <dl class="rows">
+          {honors.map(([when, what]) => (
+            <div><dt>{when}</dt><dd>{what}</dd></div>
+          ))}
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap wrap-prose prose">
+      <h2>Service and support</h2>
+      <p>
+        I serve on the Editorial Review Board of the <cite>Journal of Biological
+        Chemistry</cite>. The lab's work is supported by a Maximizing Investigator's
+        Research Award from NIGMS, two R01 awards from the National Cancer Institute, the
+        Sylvester Comprehensive Cancer Center, and the Pap Corps Champions for Cancer
+        Research.
+      </p>
+      <p class="contact-line">
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+        <a href={url('/publications')}>Publications</a>
+        <a href={url('/people')}>The rest of the lab</a>
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding-block: clamp(2.5rem, 7vw, 4.5rem) clamp(1.5rem, 4vw, 2.5rem); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+    gap: clamp(1.5rem, 5vw, 3.5rem);
+    align-items: start;
+  }
+  .portrait img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+    background: var(--paper-sunk);
+  }
+  .hero-body h1 { margin: 0.2rem 0 0.9rem; }
+  .appointments {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .appointments li { font-size: 0.98rem; color: var(--ink-muted); }
+  .affil { margin: 0.9rem 0 0; font-size: 0.9rem; color: var(--ink-faint); }
+
+  .profiles {
+    list-style: none;
+    margin: 1.4rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.1rem;
+    font-size: 0.9rem;
+  }
+
+  .split { background: var(--paper-sunk); }
+  .cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: clamp(1.5rem, 4vw, 3rem);
+  }
+  .cols h2 { font-size: var(--step-1); margin-bottom: 1rem; }
+  .rows { margin: 0; display: grid; gap: 0.7rem; }
+  .rows > div {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr);
+    gap: 0.9rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .rows dt { font-size: 0.82rem; color: var(--ink-faint); font-variant-numeric: tabular-nums; }
+  .rows dd { margin: 0; font-size: 0.92rem; }
+
+  .contact-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    margin-top: 1.4rem;
+    font-size: 0.92rem;
+  }
+
+  @media (max-width: 720px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .portrait { max-width: 220px; }
+    .rows > div { grid-template-columns: 1fr; gap: 0.15rem; }
+  }
+</style>
