@@ -54,7 +54,17 @@ const ogUrl = new URL(url(ogImage), Astro.site ?? 'https://www.isomlab.com');
         name: site.name,
         url: 'https://www.isomlab.com',
         parentOrganization: { '@type': 'CollegeOrUniversity', name: 'University of Miami' },
-        member: { '@type': 'Person', name: site.pi.name, identifier: `https://orcid.org/${site.pi.orcid}` },
+        member: {
+          '@type': 'Person',
+          name: site.pi.name,
+          identifier: `https://orcid.org/${site.pi.orcid}`,
+          sameAs: [
+            `https://orcid.org/${site.pi.orcid}`,
+            site.social.scholar,
+            site.social.linkedin,
+            site.social.twitter,
+          ].filter(Boolean),
+        },
       })}
     />
 

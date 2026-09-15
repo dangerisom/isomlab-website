@@ -15,7 +15,7 @@ export const site = {
     github: 'https://github.com/isomlab',
     twitter: 'https://twitter.com/danIsomLab',
     linkedin: 'https://www.linkedin.com/in/daniel-g-isom/',
-    scholar: null,
+    scholar: 'https://scholar.google.com/citations?user=6P24dpsAAAAJ',
   },
   nav: [
     { label: 'Research', href: '/research' },
