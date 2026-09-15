@@ -31,6 +31,44 @@ The `sameAs` list is the important one and the least visible. It is the
 machine-readable claim that those four profiles and this website are one person.
 Without it, Google sees five unconnected things.
 
+## 2026-09-15, later the same day: isomlab.com reached position four
+
+The name query now returns the Miller School faculty page, the Esploro scholarship profile,
+the UHealth lab page, **isomlab.com**, LinkedIn, the Miller School faculty directory,
+ResearchGate, and a second UHealth lab page. So the site went from absent to fourth within a
+day of the `/superdark` page, the Scholar link and the `sameAs` set going up.
+
+Do not read too much into the speed. The TM184C coverage was driving traffic and links on its
+own, and a day is fast for Google to reflect structured data. The honest reading is that the
+site became eligible and something pushed it in.
+
+### Half of page one is currently broken
+
+Measured 2026-09-15 12:42 UTC. **`med.miami.edu` and `umiamihealth.org` both refuse
+connections**, on TCP 80 and 443, from two independent network paths. They share the Azure
+address `4.255.74.232`. `pharmacology.med.miami.edu` is down too on a different address, and
+`sylvester.org` redirects into the dead host.
+
+| page-one result | state |
+|---|---|
+| med.miami.edu faculty profile | **down** |
+| scholarship.miami.edu Esploro profile | up |
+| umiamihealth.org lab page | **down** |
+| isomlab.com | up |
+| LinkedIn | up |
+| med.miami.edu faculty directory | **down** |
+| ResearchGate | up |
+| umiamihealth.org Isom Lab | **down** |
+
+`news.med.miami.edu`, which is InventUM, is on a different host and is fine, as are
+`welcome.miami.edu`, `scholarship.miami.edu` and `www.miami.edu`. So this is the Miller
+School and UHealth web platform specifically, not UM as a whole.
+
+**What it means for this worklist.** If it is a short outage, nothing. If it persists for
+weeks, Google will start dropping those pages, which would lift isomlab.com by subtraction
+rather than by merit. Either way the med.miami.edu backlink, which is item 1 below and the
+most valuable thing on the list, cannot be pursued until the platform is back.
+
 ## What to do next, highest value first
 
 ### 1. Get the authoritative pages to link isomlab.com
