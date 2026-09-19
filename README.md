@@ -40,13 +40,19 @@ Never hand-edit `src/data/publications.json` — it is overwritten on every buil
 
 ### Embargoed papers
 
-`scripts/sync-publications.mjs` has an `EMBARGOED` list at the top, matched on a
-title substring. Anything matching is carried through the build but withheld from
-the rendered page, so a paper in production cannot leak before its press embargo
-lifts.
+`scripts/sync-publications.mjs` withholds any paper whose title contains a
+fragment named in the `EMBARGOED_TITLES` environment variable, pipe separated. The
+paper is still carried through the build, so nothing else breaks; it simply is not
+rendered, and a paper in production cannot leak before its press embargo lifts.
 
-The **Nature paper is currently listed there**. Delete that line the day it goes
-live and rebuild — the paper then appears everywhere automatically.
+```bash
+EMBARGOED_TITLES='Part of a title|Part of another' npm run build
+```
+
+**Nothing is embargoed at present.** The Nature paper was, until it published on
+2026-09-09. Because the list now lives in the environment rather than in the
+script, an embargo ends by simply not setting the variable, and there is no line
+to remember to delete.
 
 ## Images
 
