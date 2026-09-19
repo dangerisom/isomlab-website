@@ -69,17 +69,29 @@ weeks, Google will start dropping those pages, which would lift isomlab.com by s
 rather than by merit. Either way the med.miami.edu backlink, which is item 1 below and the
 most valuable thing on the list, cannot be pursued until the platform is back.
 
+**Resolved.** On 2026-09-19 `med.miami.edu` and the Sylvester lab page on `umiamihealth.org`
+both answer normally. The outage lasted at most four days, which is short enough that Google
+will not have dropped anything, so the page-one picture from 2026-09-15 still stands.
+
 ## What to do next, highest value first
 
 ### 1. Get the authoritative pages to link isomlab.com
 
 This is worth more than everything else on this list combined, and none of it is
-a code change.
+a code change. **The drafted requests are kept out of this repo**, in a local
+`institutional_profiles/` folder, one per page. This repo is public and an unsent
+request to somebody's web team does not belong on it.
 
 - **The Miller School faculty page**, `med.miami.edu/faculty/daniel-isom-phd`.
-  It already outranks isomlab.com. Ask whoever maintains it to add the lab
-  website as a link. A link from a `med.miami.edu` page is the strongest single
-  signal available here.
+  It already outranks isomlab.com. A link from a `med.miami.edu` page is the
+  strongest single signal available here. **A thirteen item edit list was drafted
+  2026-09-19 and is ready for Dan to send.** The useful discovery: the page turned
+  out to have a "Research/Lab Website" link already, pointing at the Sylvester page
+  on `umiamihealth.org` rather than at isomlab.com, so the ask is to repoint it
+  rather than to add one. **Check that before assuming any other profile simply
+  lacks a link.** The same request asks for three links to isomlab.com in all, and
+  each one asks explicitly for a real hyperlink rather than a printed address,
+  because a plain-text URL passes almost nothing.
 - **InventUM**, `news.med.miami.edu`. They have covered Dan twice and both
   stories rank. Ask UM communications for a piece on the Nature paper, and ask
   specifically that it link `isomlab.com/superdark`, not only the faculty page.

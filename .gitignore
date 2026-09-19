@@ -12,3 +12,9 @@ dist/
 isomlab-website-preview.zip
 __pycache__/
 *.pyc
+
+# Requests to the people who control Dan's institutional pages: drafted emails,
+# captured page states, and candid notes about what those pages get wrong. This
+# repo is PUBLIC, and an unsent request to a colleague's web team does not belong
+# on it. The folder stays on disk and is backed up by other means.
+institutional_profiles/
