@@ -27,6 +27,10 @@ const papers = [
       // The cover art belongs to the cyclone paper in the same issue. Ours is the line at
       // the foot of the cover, so the caption says so rather than implying otherwise.
       teaser: "Structural surprise: 'Superdark' protein resembles receptor but behaves unusually",
+      // The teaser is a few pixels tall at any size the column allows, so the line itself
+      // is shown as a crop at its own scale rather than asking anyone to squint at it.
+      teaserSrc: '/media/nature-cover-teaser-2026-09-17.webp',
+      teaserSrc2x: '/media/nature-cover-teaser-2026-09-17@2x.webp',
     },
   },
 ];
@@ -118,15 +122,25 @@ const jsonLd = {
                 <img
                   src={url(p.cover.src)}
                   srcset={`${url(p.cover.src)} 640w, ${url(p.cover.src2x)} 1280w`}
-                  sizes="(max-width: 46rem) 60vw, 260px"
+                  sizes="(max-width: 46rem) 70vw, 360px"
                   width="640" height="851" loading="lazy" decoding="async"
                   alt={`Cover of Nature, ${p.cover.issueDate}. A line at the foot of the cover reads: ${p.cover.teaser}`}
                 />
               </a>
               <figcaption>
-                <cite>Nature</cite>, {p.cover.issueDate} ({p.cover.issueRef}). The issue cover
-                carried the paper as &ldquo;{p.cover.teaser}.&rdquo; The cover image itself
-                belongs to another paper in the same issue. Cover &copy; Springer Nature.
+                <img
+                  class="teaser"
+                  src={url(p.cover.teaserSrc)}
+                  srcset={`${url(p.cover.teaserSrc)} 416w, ${url(p.cover.teaserSrc2x)} 832w`}
+                  sizes="(max-width: 46rem) 80vw, 320px"
+                  width="416" height="190" loading="lazy" decoding="async"
+                  alt={`Detail of the cover line: ${p.cover.teaser}`}
+                />
+                <span>
+                  <cite>Nature</cite>, {p.cover.issueDate} ({p.cover.issueRef}). The line above
+                  is the foot of the cover, shown at its own scale. The cover image itself
+                  belongs to another paper in the same issue. Cover &copy; Springer Nature.
+                </span>
               </figcaption>
             </figure>
           )}
@@ -321,10 +335,18 @@ const jsonLd = {
   .entry + .entry { margin-top: 2.2rem; padding-top: 2.2rem; border-top: 1px solid var(--rule); }
 
   .cover { margin: 1.8rem 0 0; }
-  .cover img {
+  .cover > a img {
     display: block;
-    width: min(260px, 60vw);
+    width: min(360px, 70vw);
     height: auto;
+    border: 1px solid var(--rule);
+  }
+  /* The cover line at readable size, since it is a few pixels tall on the cover itself. */
+  .cover .teaser {
+    display: block;
+    width: min(320px, 80vw);
+    height: auto;
+    margin-bottom: 0.7rem;
     border: 1px solid var(--rule);
   }
   .cover figcaption {
