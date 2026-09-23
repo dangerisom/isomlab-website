@@ -8,6 +8,12 @@ const paper = {
   year: 2026,
   doi: 'https://doi.org/10.1038/s41586-026-10993-8',
   news: 'https://doi.org/10.1038/d41586-026-02472-x',
+  issue: 'https://www.nature.com/nature/volumes/657/issues/8132',
+  issueDate: '17 September 2026',
+  issueRef: 'vol. 657, no. 8132',
+  // The cover art belongs to the cyclone-forecasting paper in the same issue. Ours is
+  // the bottom-right line, so the caption says so rather than implying we had the cover.
+  coverTeaser: "Structural surprise: 'Superdark' protein resembles receptor but behaves unusually",
 };
 
 // Every name TM184C is filed under. Anyone arriving from a gene database or a
@@ -252,6 +258,23 @@ const jsonLd = {
         <a href={paper.doi} rel="noopener">Read in Nature</a>
         <a href={paper.news} rel="noopener">Nature News &amp; Views</a>
       </p>
+
+      <figure class="cover">
+        <a href={paper.issue} rel="noopener">
+          <img
+            src={url('/media/nature-cover-2026-09-17.webp')}
+            srcset={`${url('/media/nature-cover-2026-09-17.webp')} 640w, ${url('/media/nature-cover-2026-09-17@2x.webp')} 1280w`}
+            sizes="(max-width: 640px) 60vw, 260px"
+            width="640" height="851" loading="lazy" decoding="async"
+            alt={`Cover of Nature, ${paper.issueDate}. A line at the foot of the cover reads: ${paper.coverTeaser}`}
+          />
+        </a>
+        <figcaption>
+          <cite>Nature</cite>, {paper.issueDate} ({paper.issueRef}). The issue cover carried
+          the paper as &ldquo;{paper.coverTeaser}.&rdquo; The cover image itself belongs to
+          another paper in the same issue. Cover &copy; Springer Nature.
+        </figcaption>
+      </figure>
       <p>
         The work was supported by the National Institutes of Health, the Sylvester
         Comprehensive Cancer Center, and the Pap Corps Champions for Cancer Research.
@@ -261,6 +284,32 @@ const jsonLd = {
 </Base>
 
 <style>
+  /* The cover sits beside the citation on wide screens and above it on narrow ones,
+     small enough to read as a reference rather than as a banner. */
+  .cover { margin: 1.8rem 0 0; }
+  .cover img {
+    display: block;
+    width: min(260px, 60vw);
+    height: auto;
+    border: 1px solid var(--rule);
+  }
+  .cover figcaption {
+    margin-top: 0.6rem;
+    max-width: 46ch;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--ink-faint);
+  }
+  @media (min-width: 46rem) {
+    .cover {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 1.2rem;
+      align-items: start;
+    }
+    .cover figcaption { margin-top: 0; }
+  }
+
   .intro { padding-block: clamp(3rem, 8vw, 5.5rem) clamp(1.5rem, 4vw, 2.5rem); }
   .definition { background: var(--paper-sunk); }
 
