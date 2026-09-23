@@ -118,7 +118,7 @@ const jsonLd = {
                 <img
                   src={url(p.cover.src)}
                   srcset={`${url(p.cover.src)} 640w, ${url(p.cover.src2x)} 1280w`}
-                  sizes="(max-width: 46rem) 55vw, 200px"
+                  sizes="(max-width: 46rem) 60vw, 260px"
                   width="640" height="851" loading="lazy" decoding="async"
                   alt={`Cover of Nature, ${p.cover.issueDate}. A line at the foot of the cover reads: ${p.cover.teaser}`}
                 />
@@ -313,59 +313,36 @@ const jsonLd = {
 </Base>
 
 <style>
-  /* The paper block sits directly under the intro, so it is set tighter than a body
-     section: citation on the left, cover beside it, and it collapses on narrow screens.
-     The layout follows the list, so a second paper simply stacks below the first. */
+  /* The paper block sits directly under the intro. The citation runs full width and the
+     cover sits beneath it, image beside its own caption, which reads better than squeezing
+     the citation into a column. A second paper simply stacks below the first. */
   .papers { background: var(--paper-sunk); }
   .entry { margin-top: 1.4rem; }
   .entry + .entry { margin-top: 2.2rem; padding-top: 2.2rem; border-top: 1px solid var(--rule); }
-  .cover { margin: 1.2rem 0 0; }
+
+  .cover { margin: 1.8rem 0 0; }
   .cover img {
     display: block;
-    width: min(200px, 55vw);
+    width: min(260px, 60vw);
     height: auto;
     border: 1px solid var(--rule);
   }
   .cover figcaption {
     margin-top: 0.6rem;
-    font-size: 0.8rem;
+    max-width: 46ch;
+    font-size: 0.85rem;
     line-height: 1.5;
     color: var(--ink-faint);
   }
   @media (min-width: 46rem) {
-    .entry {
+    .cover {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 200px;
-      gap: clamp(1.2rem, 3vw, 2rem);
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 1.2rem;
       align-items: start;
     }
-    .cover { margin: 0; }
-    .cover figcaption { max-width: 200px; }
+    .cover figcaption { margin-top: 0; }
   }
-
-  .intro { padding-block: clamp(3rem, 8vw, 5.5rem) clamp(1.5rem, 4vw, 2.5rem); }
-  .definition { background: var(--paper-sunk); }
-
-  /* The definition is the thing most readers came for, so it is set as a pull
-     quote rather than as another body paragraph. */
-  .define {
-    margin: 1.4rem 0 1.8rem;
-    padding-left: clamp(1rem, 3vw, 1.75rem);
-    border-left: 3px solid var(--accent);
-  }
-  .define p {
-    font-family: var(--font-display);
-    font-size: var(--step-1);
-    line-height: 1.5;
-    color: var(--ink);
-    margin: 0;
-  }
-  .define footer {
-    margin-top: 0.8rem;
-    font-size: 0.85rem;
-    color: var(--ink-faint);
-  }
-  .define footer { font-style: normal; }
 
   .idcard {
     margin: 2rem 0 0;
