@@ -2,20 +2,38 @@
 import Base from '../layouts/Base.astro';
 import { url } from '../utils/url.js';
 
-const paper = {
-  title: 'TM184C is a GPCR-like regulator of intercellular exchange and autophagy',
-  venue: 'Nature',
-  year: 2026,
-  doi: 'https://doi.org/10.1038/s41586-026-10993-8',
-  news: 'https://doi.org/10.1038/d41586-026-02472-x',
-  issue: 'https://www.nature.com/nature/volumes/657/issues/8132',
-  issueDate: '17 September 2026',
-  issueRef: 'vol. 657, no. 8132',
-  // The cover art belongs to the cyclone-forecasting paper in the same issue. Ours is
-  // the bottom-right line, so the caption says so rather than implying we had the cover.
-  coverTeaser: "Structural surprise: 'Superdark' protein resembles receptor but behaves unusually",
-};
+const papers = [
+  {
+    kind: 'research',
+    title: 'TM184C is a GPCR-like regulator of intercellular exchange and autophagy',
+    authors:
+      'Lee K, Taylor S, Arcuri J, Chandthakuri S, Pujols J, Colon B, Wang Q, Wu C, Meng Z, ' +
+      'Thompson-Ceccato S, Mitchell J, Bayik D, Carbone A, Slepak V, Slepak TI, Welford S, ' +
+      'Ivan ME, Wang D, Goldberg B, Baringer W, Maradzike E, Isom DG',
+    venue: 'Nature',
+    year: 2026,
+    doi: 'https://doi.org/10.1038/s41586-026-10993-8',
+    links: [
+      { label: 'Read in Nature', href: 'https://doi.org/10.1038/s41586-026-10993-8' },
+      { label: 'Nature News & Views', href: 'https://doi.org/10.1038/d41586-026-02472-x' },
+    ],
+    credit: 'Kyutae Lee, Sam Taylor and Jennifer Arcuri contributed equally as co-first authors.',
+    cover: {
+      src: '/media/nature-cover-2026-09-17.webp',
+      src2x: '/media/nature-cover-2026-09-17@2x.webp',
+      issue: 'https://www.nature.com/nature/volumes/657/issues/8132',
+      issueDate: '17 September 2026',
+      issueRef: 'vol. 657, no. 8132',
+      // The cover art belongs to the cyclone paper in the same issue. Ours is the line at
+      // the foot of the cover, so the caption says so rather than implying otherwise.
+      teaser: "Structural surprise: 'Superdark' protein resembles receptor but behaves unusually",
+    },
+  },
+];
 
+// One paper today, and more expected: Dan is being invited to write on the topic. The
+// heading and the layout both follow the length of this list rather than being rewritten.
+const paper = papers[0];
 // Every name TM184C is filed under. Anyone arriving from a gene database or a
 // vendor catalogue is searching one of these, not the name we use in the paper.
 const aliases = ['TMEM184C', 'TM184C', 'TMEM34', 'PRO1355', 'FLJ10846', 'T184C'];
@@ -72,6 +90,48 @@ const jsonLd = {
         filed in the gene databases as TMEM184C, was one of them until we went looking
         by shape instead of by sequence.
       </p>
+    </div>
+  </section>
+
+
+  <section class="section papers">
+    <div class="wrap wrap-prose prose">
+      <h2 id="read-the-paper">{papers.length > 1 ? 'Read the superdark papers' : 'Read the superdark paper'}</h2>
+
+      {papers.map((p) => (
+        <article class="entry">
+          <div class="entry-body">
+            <p class="cite">
+              {p.authors}. &ldquo;{p.title}&rdquo; <cite>{p.venue}</cite> ({p.year}).
+            </p>
+            {p.credit && <p class="credit">{p.credit}</p>}
+            <p class="links">
+              {p.links.map((l) => (
+                <a href={l.href} rel="noopener">{l.label}</a>
+              ))}
+            </p>
+          </div>
+
+          {p.cover && (
+            <figure class="cover">
+              <a href={p.cover.issue} rel="noopener">
+                <img
+                  src={url(p.cover.src)}
+                  srcset={`${url(p.cover.src)} 640w, ${url(p.cover.src2x)} 1280w`}
+                  sizes="(max-width: 46rem) 55vw, 200px"
+                  width="640" height="851" loading="lazy" decoding="async"
+                  alt={`Cover of Nature, ${p.cover.issueDate}. A line at the foot of the cover reads: ${p.cover.teaser}`}
+                />
+              </a>
+              <figcaption>
+                <cite>Nature</cite>, {p.cover.issueDate} ({p.cover.issueRef}). The issue cover
+                carried the paper as &ldquo;{p.cover.teaser}.&rdquo; The cover image itself
+                belongs to another paper in the same issue. Cover &copy; Springer Nature.
+              </figcaption>
+            </figure>
+          )}
+        </article>
+      ))}
     </div>
   </section>
 
@@ -242,40 +302,9 @@ const jsonLd = {
     </div>
   </section>
 
-  <section class="section paper">
+  <section class="section support">
     <div class="wrap wrap-prose prose">
-      <h2 id="read-the-paper">Read the paper</h2>
-      <p class="cite">
-        Lee K, Taylor S, Arcuri J, Chandthakuri S, Pujols J, Colon B, Wang Q, Wu C, Meng Z,
-        Thompson-Ceccato S, Mitchell J, Bayik D, Carbone A, Slepak V, Slepak TI, Welford S,
-        Ivan ME, Wang D, Goldberg B, Baringer W, Maradzike E, Isom DG.
-        &ldquo;{paper.title}&rdquo; <cite>{paper.venue}</cite> ({paper.year}).
-      </p>
-      <p class="credit">
-        Kyutae Lee, Sam Taylor and Jennifer Arcuri contributed equally as co-first authors.
-      </p>
-      <p class="links">
-        <a href={paper.doi} rel="noopener">Read in Nature</a>
-        <a href={paper.news} rel="noopener">Nature News &amp; Views</a>
-      </p>
-
-      <figure class="cover">
-        <a href={paper.issue} rel="noopener">
-          <img
-            src={url('/media/nature-cover-2026-09-17.webp')}
-            srcset={`${url('/media/nature-cover-2026-09-17.webp')} 640w, ${url('/media/nature-cover-2026-09-17@2x.webp')} 1280w`}
-            sizes="(max-width: 640px) 60vw, 260px"
-            width="640" height="851" loading="lazy" decoding="async"
-            alt={`Cover of Nature, ${paper.issueDate}. A line at the foot of the cover reads: ${paper.coverTeaser}`}
-          />
-        </a>
-        <figcaption>
-          <cite>Nature</cite>, {paper.issueDate} ({paper.issueRef}). The issue cover carried
-          the paper as &ldquo;{paper.coverTeaser}.&rdquo; The cover image itself belongs to
-          another paper in the same issue. Cover &copy; Springer Nature.
-        </figcaption>
-      </figure>
-      <p>
+      <p class="funding">
         The work was supported by the National Institutes of Health, the Sylvester
         Comprehensive Cancer Center, and the Pap Corps Champions for Cancer Research.
       </p>
@@ -284,30 +313,34 @@ const jsonLd = {
 </Base>
 
 <style>
-  /* The cover sits beside the citation on wide screens and above it on narrow ones,
-     small enough to read as a reference rather than as a banner. */
-  .cover { margin: 1.8rem 0 0; }
+  /* The paper block sits directly under the intro, so it is set tighter than a body
+     section: citation on the left, cover beside it, and it collapses on narrow screens.
+     The layout follows the list, so a second paper simply stacks below the first. */
+  .papers { background: var(--paper-sunk); }
+  .entry { margin-top: 1.4rem; }
+  .entry + .entry { margin-top: 2.2rem; padding-top: 2.2rem; border-top: 1px solid var(--rule); }
+  .cover { margin: 1.2rem 0 0; }
   .cover img {
     display: block;
-    width: min(260px, 60vw);
+    width: min(200px, 55vw);
     height: auto;
     border: 1px solid var(--rule);
   }
   .cover figcaption {
     margin-top: 0.6rem;
-    max-width: 46ch;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     color: var(--ink-faint);
   }
   @media (min-width: 46rem) {
-    .cover {
+    .entry {
       display: grid;
-      grid-template-columns: auto minmax(0, 1fr);
-      gap: 1.2rem;
+      grid-template-columns: minmax(0, 1fr) 200px;
+      gap: clamp(1.2rem, 3vw, 2rem);
       align-items: start;
     }
-    .cover figcaption { margin-top: 0; }
+    .cover { margin: 0; }
+    .cover figcaption { max-width: 200px; }
   }
 
   .intro { padding-block: clamp(3rem, 8vw, 5.5rem) clamp(1.5rem, 4vw, 2.5rem); }
